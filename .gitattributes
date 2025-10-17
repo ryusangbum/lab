@@ -1,0 +1,6 @@
+KataGo/models/*.bin filter=lfs diff=lfs merge=lfs -text
+KataGo/models/*.bin.gz filter=lfs diff=lfs merge=lfs -text
+KataGo/cpp/tests/models/*.bin.gz filter=lfs diff=lfs merge=lfs -text
+KataGo/cpp/tests/models/*.txt.gz filter=lfs diff=lfs merge=lfs -text
+KataGo/cpp/build/katago filter=lfs diff=lfs merge=lfs -text
+KataGo/cpp/katago filter=lfs diff=lfs merge=lfs -text
