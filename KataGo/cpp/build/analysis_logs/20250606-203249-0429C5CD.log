@@ -1,0 +1,87 @@
+2025-06-06 20:32:49+0900: Running with following config:
+analysisIgnorePreRootHistory = false
+chosenMovePrune = 0
+chosenMoveSubtract = 0
+chosenMoveTemperature = 1.0
+chosenMoveTemperatureEarly = 1.0
+chosenMoveTemperatureOnlyBelowProb = 0.0
+ignorePreRootHistory = false
+logDir = analysis_logs
+logSearchInfo = true
+logToStderr = true
+maxVisits = 500
+nnCacheSizePowerOfTwo = 17
+nnMaxBatchSize = 8
+nnMutexPoolSizePowerOfTwo = 14
+nnRandomize = false
+numAnalysisThreads = 1
+numSearchThreads = 4
+reportAnalysisWinratesAs = BLACK
+rootNumSymmetriesToSample = 1
+rules = japanese
+subtreeValueBiasFactor = 0.0
+useLcbForSelection = false
+useNoisePruning = false
+useUncertainty = false
+
+2025-06-06 20:32:49+0900: Analysis Engine starting...
+2025-06-06 20:32:49+0900: KataGo v1.15.3
+2025-06-06 20:32:49+0900: nnRandSeed0 = 15319194791815194628
+2025-06-06 20:32:49+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-06-06 20:32:49+0900: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2025-06-06 20:32:52+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-06-06 20:32:52+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-06-06 20:32:52+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-06-06 20:32:54+0900: --------------
+2025-06-06 20:32:54+0900: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from analysis.cfg
+2025-06-06 20:32:54+0900: WARNING: Unused key 'analysisIgnorePreRootHistory' in analysis.cfg
+2025-06-06 20:32:54+0900: WARNING: Unused key 'rules' in analysis.cfg
+2025-06-06 20:32:54+0900: --------------
+2025-06-06 20:32:54+0900: Loaded config analysis.cfg
+2025-06-06 20:32:54+0900: Loaded model ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-06-06 20:32:54+0900: Analyzing up to 1 positions at a time in parallel
+2025-06-06 20:32:54+0900: Started, ready to begin handling requests
+2025-06-06 20:32:55+0900: MoveNum: 7 HASH: E68B33B562706CB41FFB3B0566A70326
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . O2. . . . . . . . . . . . . . .
+16 . . X X3. . . . . . . . . . . O . . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X . . . . . . . . . . . O X1. .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Root visits: 103
+New playouts: 103
+NN rows: 98
+NN batches: 50
+NN avg batch size: 1.96
+PV: R3 R5 Q5 S3 Q3 R7 C17 E16 F18 S2 Q6
+Tree:
+: T -13.00c W -12.51c S  -0.49c ( -0.9 L  -0.6) N     103  --  R3 R5 Q5 S3 Q3 R7 C17
+---White(v)---
+R3  : T -16.59c W -15.83c S  -0.77c ( -1.1 L  -0.7) LCB  -12.62c P 89.66% WF  76.2 PSV      75 N      75  --  R3 R5 Q5 S3 Q3 R7 C17 E16
+C17 : T   2.86c W   2.12c S   0.74c ( +0.3 L  +0.0) LCB   31.03c P  7.05% WF   4.7 PSV       1 N       5  --  C17 E16 E17 F17 R3
+Q3  : T  -6.01c W  -6.03c S   0.01c ( -0.4 L  -0.3) LCB   -0.23c P  0.58% WF  11.6 PSV       0 N      12  --  Q3 R3 Q5 S6 C17 E16 F18
+Q5  : T  -2.71c W  -3.00c S   0.28c ( -0.1 L  -0.2) LCB   10.00c P  0.75% WF   5.7 PSV       0 N       6  --  Q5 R3 Q3 S6 C17 E16 F18
+R5  : T   1.40c W   0.68c S   0.72c ( +0.3 L  +0.1) LCB   44.84c P  0.46% WF   3.8 PSV       0 N       4  --  R5 R3 Q3
+
+2025-06-06 20:32:55+0900: ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-06-06 20:32:55+0900: NN rows: 98
+2025-06-06 20:32:55+0900: NN batches: 50
+2025-06-06 20:32:55+0900: NN avg batch size: 1.96
+2025-06-06 20:32:55+0900: GPU -1 finishing, processed 98 rows 50 batches
+2025-06-06 20:32:55+0900: All cleaned up, quitting

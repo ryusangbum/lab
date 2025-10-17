@@ -1,0 +1,61 @@
+2025-06-11 20:12:17+0900: Running with following config:
+analysisIgnorePreRootHistory = false
+chosenMovePrune = 0
+chosenMoveSubtract = 0
+chosenMoveTemperature = 1.0
+chosenMoveTemperatureEarly = 1.0
+chosenMoveTemperatureOnlyBelowProb = 0.0
+ignorePreRootHistory = false
+logDir = analysis_logs
+logSearchInfo = true
+logToStderr = true
+maxVisits = 2000
+nnCacheSizePowerOfTwo = 17
+nnMaxBatchSize = 8
+nnMutexPoolSizePowerOfTwo = 14
+nnRandomize = false
+numAnalysisThreads = 1
+numSearchThreads = 4
+reportAnalysisWinratesAs = BLACK
+rootNumSymmetriesToSample = 1
+rules = japanese
+subtreeValueBiasFactor = 0.0
+useLcbForSelection = false
+useNoisePruning = false
+useUncertainty = false
+
+2025-06-11 20:12:17+0900: Analysis Engine starting...
+2025-06-11 20:12:17+0900: KataGo v1.15.3
+2025-06-11 20:12:17+0900: nnRandSeed0 = 13680786551048183839
+2025-06-11 20:12:17+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-06-11 20:12:17+0900: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2025-06-11 20:12:19+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-06-11 20:12:19+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-06-11 20:12:19+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-06-11 20:12:20+0900: --------------
+2025-06-11 20:12:20+0900: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from analysis.cfg
+2025-06-11 20:12:20+0900: WARNING: Unused key 'analysisIgnorePreRootHistory' in analysis.cfg
+2025-06-11 20:12:20+0900: WARNING: Unused key 'rules' in analysis.cfg
+2025-06-11 20:12:20+0900: --------------
+2025-06-11 20:12:20+0900: Loaded config analysis.cfg
+2025-06-11 20:12:20+0900: Loaded model ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-06-11 20:12:20+0900: Analyzing up to 1 positions at a time in parallel
+2025-06-11 20:12:20+0900: Started, ready to begin handling requests
+2025-06-11 20:12:20+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 2: syntax error while parsing object key - unexpected end of input; expected string literal - could not parse input line as json request: {"}
+2025-06-11 20:12:20+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 5: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"id\": \"top_moves\","}
+2025-06-11 20:12:20+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 16: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"initialStones\": [],"}
+2025-06-11 20:12:20+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 8: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"moves\": [[\"B\", \"D4\"], [\"W\", \"Q16\"]],"}
+2025-06-11 20:12:20+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 8: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"rules\": \"japanese\","}
+2025-06-11 20:12:20+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 7: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"komi\": 6.5,"}
+2025-06-11 20:12:20+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 13: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"boardXSize\": 19,"}
+2025-06-11 20:12:20+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 13: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"boardYSize\": 19,"}
+2025-06-11 20:12:20+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 15: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"analyzeTurns\": [2],"}
+2025-06-11 20:12:20+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 12: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"maxVisits\": 2000,"}
+2025-06-11 20:12:20+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 16: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"includePolicy\": true"}
+2025-06-11 20:12:20+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 1: syntax error while parsing value - unexpected '}'; expected '[', '{', or a literal - could not parse input line as json request: }"}
+2025-06-11 20:12:20+0900: ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-06-11 20:12:20+0900: NN rows: 0
+2025-06-11 20:12:20+0900: NN batches: 0
+2025-06-11 20:12:20+0900: NN avg batch size: -nan
+2025-06-11 20:12:20+0900: GPU -1 finishing, processed 0 rows 0 batches
+2025-06-11 20:12:20+0900: All cleaned up, quitting

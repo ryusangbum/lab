@@ -1,0 +1,72 @@
+2025-05-27 14:03:10+0900: Running with following config:
+humanSLChosenMoveIgnorePass = true
+humanSLChosenMovePiklLambda = 100000000
+humanSLChosenMoveProp = 1.0
+humanSLProfile = rank_3d
+includeMovesOwnership = false
+includeOwnership = false
+includePV = false
+includePolicy = true
+includeScoreMean = false
+includeScoreStdev = false
+includeUtility = false
+lagBuffer = 1.0
+logAllGTPCommunication = false
+logDir = logs_humansl
+logSearchInfo = false
+logToStderr = false
+maxBoardSize = 19
+maxBoardXSize = 19
+maxBoardYSize = 19
+maxPlayouts = 1
+maxTime = 0.0
+maxVisits = 40
+nnCacheSizePowerOfTwo = 20
+nnMaxBatchSize = 1
+numAnalysisThreads = 1
+numSearchThreads = 1
+rules = japanese
+
+2025-05-27 14:03:10+0900: GTP Engine starting...
+2025-05-27 14:03:10+0900: KataGo v1.15.3
+2025-05-27 14:03:10+0900: Using Japanese rules initially, unless GTP/GUI overrides this
+2025-05-27 14:03:10+0900: Using 1 CPU thread(s) for search
+2025-05-27 14:03:10+0900: nnRandSeed0 = 622414983370634839
+2025-05-27 14:03:10+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-05-27 14:03:10+0900: Initializing neural net buffer to be size 19 * 19 exactly
+2025-05-27 14:03:13+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-05-27 14:03:13+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-05-27 14:03:13+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-05-27 14:03:14+0900: Loaded neural net with nnXLen 19 nnYLen 19
+2025-05-27 14:03:14+0900: nnRandSeed0 = 2655246435655381588
+2025-05-27 14:03:14+0900: After dedups: nnModelFile0 = ../../models/b18c384nbt-humanv0.bin.gz useFP16 auto useNHWC auto
+2025-05-27 14:03:14+0900: Initializing neural net buffer to be size 19 * 19 exactly
+2025-05-27 14:03:15+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-05-27 14:03:15+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-05-27 14:03:15+0900: Cuda backend thread 0: Model name: b18c384nbt-humanv0
+2025-05-27 14:03:16+0900: Loaded human SL net with nnXLen 19 nnYLen 19
+2025-05-27 14:03:16+0900: Initializing board with boardXSize 19 boardYSize 19
+2025-05-27 14:03:16+0900: --------------
+2025-05-27 14:03:16+0900: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from human5k_pure.cfg
+2025-05-27 14:03:16+0900: WARNING: Unused key 'includeMovesOwnership' in human5k_pure.cfg
+2025-05-27 14:03:16+0900: WARNING: Unused key 'includeOwnership' in human5k_pure.cfg
+2025-05-27 14:03:16+0900: WARNING: Unused key 'includePV' in human5k_pure.cfg
+2025-05-27 14:03:16+0900: WARNING: Unused key 'includePolicy' in human5k_pure.cfg
+2025-05-27 14:03:16+0900: WARNING: Unused key 'includeScoreMean' in human5k_pure.cfg
+2025-05-27 14:03:16+0900: WARNING: Unused key 'includeScoreStdev' in human5k_pure.cfg
+2025-05-27 14:03:16+0900: WARNING: Unused key 'includeUtility' in human5k_pure.cfg
+2025-05-27 14:03:16+0900: WARNING: Unused key 'maxBoardSize' in human5k_pure.cfg
+2025-05-27 14:03:16+0900: WARNING: Unused key 'maxBoardXSize' in human5k_pure.cfg
+2025-05-27 14:03:16+0900: WARNING: Unused key 'maxBoardYSize' in human5k_pure.cfg
+2025-05-27 14:03:16+0900: WARNING: Unused key 'numAnalysisThreads' in human5k_pure.cfg
+2025-05-27 14:03:16+0900: --------------
+2025-05-27 14:03:16+0900: Loaded config human5k_pure.cfg
+2025-05-27 14:03:16+0900: Loaded model ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-05-27 14:03:16+0900: Loaded human SL model ../../models/b18c384nbt-humanv0.bin.gz
+2025-05-27 14:03:16+0900: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-05-27 14:03:16+0900: Human SL model name: b18c384nbt-humanv0
+2025-05-27 14:03:16+0900: GTP ready, beginning main protocol loop
+2025-05-27 14:03:49+0900: Quit requested by controller
+2025-05-27 14:03:49+0900: GPU -1 finishing, processed 2 rows 2 batches
+2025-05-27 14:03:49+0900: GPU -1 finishing, processed 2 rows 2 batches
+2025-05-27 14:03:49+0900: All cleaned up, quitting

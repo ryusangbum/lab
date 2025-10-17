@@ -1,0 +1,131 @@
+2025-05-31 19:24:27+0900: Running with following config:
+allowResignation = true
+analysisIgnorePreRootHistory = false
+chosenMovePrune = 0
+chosenMoveSubtract = 0
+chosenMoveTemperature = 0.70
+chosenMoveTemperatureEarly = 0.85
+chosenMoveTemperatureHalflife = 80
+chosenMoveTemperatureOnlyBelowProb = 0.01
+delayMoveMax = 10.0
+delayMoveScale = 2.0
+dynamicScoreUtilityFactor = 0.00
+humanSLChosenMoveIgnorePass = true
+humanSLChosenMovePiklLambda = 0.3
+humanSLChosenMoveProp = 1.0
+humanSLCpuctExploration = 0.50
+humanSLCpuctPermanent = 0.2
+humanSLOppExploreProbWeightful = 0.0
+humanSLOppExploreProbWeightless = 0.0
+humanSLPlaExploreProbWeightful = 0.0
+humanSLPlaExploreProbWeightless = 0.0
+humanSLProfile = preaz_1d
+humanSLRootExploreProbWeightful = 0.0
+humanSLRootExploreProbWeightless = 0.0
+ignorePreRootHistory = false
+includeOwnership = false
+includePV = false
+includePolicy = true
+includeScoreMean = true
+includeScoreStdev = true
+includeUtility = true
+lagBuffer = 1.0
+logAllGTPCommunication = true
+logDir = gtp_logs
+logSearchInfo = true
+logSearchInfoForChosenMove = false
+logToStderr = false
+maxVisits = 200
+nnCacheSizePowerOfTwo = 17
+nnMaxBatchSize = 8
+nnMutexPoolSizePowerOfTwo = 14
+numAnalysisThreads = 1
+numSearchThreads = 1
+reportIncludeHumanPolicy = true
+resignConsecTurns = 20
+resignMinMovesPerBoardArea = 0.4
+resignMinScoreDifference = 40
+resignThreshold = -0.99
+rootNumSymmetriesToSample = 2
+rules = japanese
+staticScoreUtilityFactor = 0.30
+subtreeValueBiasFactor = 0.0
+useLcbForSelection = false
+useNoisePruning = false
+useUncertainty = false
+winLossUtilityFactor = 1.0
+
+2025-05-31 19:24:27+0900: Analysis Engine starting...
+2025-05-31 19:24:27+0900: KataGo v1.15.3
+2025-05-31 19:24:27+0900: nnRandSeed0 = 10714946153460919281
+2025-05-31 19:24:27+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-05-31 19:24:27+0900: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2025-05-31 19:24:30+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-05-31 19:24:30+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-05-31 19:24:30+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-05-31 19:24:31+0900: nnRandSeed0 = 14674066270426321618
+2025-05-31 19:24:31+0900: After dedups: nnModelFile0 = ../../models/b18c384nbt-humanv0.bin.gz useFP16 auto useNHWC auto
+2025-05-31 19:24:31+0900: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2025-05-31 19:24:33+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-05-31 19:24:33+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-05-31 19:24:33+0900: Cuda backend thread 0: Model name: b18c384nbt-humanv0
+2025-05-31 19:24:33+0900: --------------
+2025-05-31 19:24:33+0900: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'allowResignation' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'analysisIgnorePreRootHistory' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'delayMoveMax' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'delayMoveScale' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'includeOwnership' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'includePV' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'includePolicy' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'includeScoreMean' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'includeScoreStdev' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'includeUtility' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'logAllGTPCommunication' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'logSearchInfoForChosenMove' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'reportIncludeHumanPolicy' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'resignConsecTurns' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'resignMinMovesPerBoardArea' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'resignMinScoreDifference' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'resignThreshold' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: WARNING: Unused key 'rules' in human5k_pure.cfg
+2025-05-31 19:24:33+0900: --------------
+2025-05-31 19:24:33+0900: Loaded config human5k_pure.cfg
+2025-05-31 19:24:33+0900: Loaded model ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-05-31 19:24:33+0900: Analyzing up to 1 positions at a time in parallel
+2025-05-31 19:24:33+0900: Started, ready to begin handling requests
+2025-05-31 19:24:45+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 1: syntax error while parsing value - invalid literal; last read: 'b' - could not parse input line as json request: boardsize 19"}
+2025-05-31 19:25:00+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 2: syntax error while parsing object key - unexpected end of input; expected string literal - could not parse input line as json request: {"}
+2025-05-31 19:25:00+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 5: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"id\": \"humansl-test\","}
+2025-05-31 19:25:00+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 9: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"action\": \"analyze\","}
+2025-05-31 19:25:00+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 13: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"boardXSize\": 19,"}
+2025-05-31 19:25:00+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 13: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"boardYSize\": 19,"}
+2025-05-31 19:25:00+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 8: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"rules\": \"japanese\","}
+2025-05-31 19:25:00+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 7: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"komi\": 7.5,"}
+2025-05-31 19:25:00+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 8: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"board\": ["}
+2025-05-31 19:25:00+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:00+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:00+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 172: syntax error while parsing value - unexpected ','; expected end of input - could not parse input line as json request: [\"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\", \"empty\"],"}
+2025-05-31 19:25:01+0900: Error: {"error":"Request line was valid json but was not an object, ignoring: [\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\"]"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 1: syntax error while parsing value - unexpected ']'; expected '[', '{', or a literal - could not parse input line as json request: ],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 8: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"moves\": [],"}
+2025-05-31 19:25:01+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 15: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"playerToMove\": \"black\""}
+2025-05-31 19:25:49+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 1: syntax error while parsing value - unexpected '}'; expected '[', '{', or a literal - could not parse input line as json request: }exit"}
+2025-05-31 19:25:50+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 1: syntax error while parsing value - invalid literal; last read: 'q' - could not parse input line as json request: quit"}
+2025-05-31 19:25:51+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 1: syntax error while parsing value - invalid literal; last read: 'q' - could not parse input line as json request: quit"}
+2025-05-31 19:25:52+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 1: syntax error while parsing value - invalid literal; last read: 'd' - could not parse input line as json request: df"}

@@ -1,0 +1,141 @@
+2025-05-31 19:17:10+0900: Running with following config:
+allowResignation = true
+analysisIgnorePreRootHistory = false
+chosenMovePrune = 0
+chosenMoveSubtract = 0
+chosenMoveTemperature = 0.70
+chosenMoveTemperatureEarly = 0.85
+chosenMoveTemperatureHalflife = 80
+chosenMoveTemperatureOnlyBelowProb = 0.01
+delayMoveMax = 10.0
+delayMoveScale = 2.0
+dynamicScoreUtilityFactor = 0.00
+humanSLChosenMoveIgnorePass = true
+humanSLChosenMovePiklLambda = 0.3
+humanSLChosenMoveProp = 1.0
+humanSLCpuctExploration = 0.50
+humanSLCpuctPermanent = 0.2
+humanSLOppExploreProbWeightful = 0.0
+humanSLOppExploreProbWeightless = 0.0
+humanSLPlaExploreProbWeightful = 0.0
+humanSLPlaExploreProbWeightless = 0.0
+humanSLProfile = preaz_1d
+humanSLRootExploreProbWeightful = 0.0
+humanSLRootExploreProbWeightless = 0.0
+ignorePreRootHistory = false
+lagBuffer = 1.0
+logAllGTPCommunication = true
+logDir = gtp_logs
+logSearchInfo = true
+logSearchInfoForChosenMove = false
+logToStderr = false
+maxVisits = 200
+nnCacheSizePowerOfTwo = 17
+nnMutexPoolSizePowerOfTwo = 14
+numSearchThreads = 1
+reportIncludeHumanPolicy = true
+resignConsecTurns = 20
+resignMinMovesPerBoardArea = 0.4
+resignMinScoreDifference = 40
+resignThreshold = -0.99
+rootNumSymmetriesToSample = 2
+rules = japanese
+staticScoreUtilityFactor = 0.30
+subtreeValueBiasFactor = 0.0
+useLcbForSelection = false
+useNoisePruning = false
+useUncertainty = false
+winLossUtilityFactor = 1.0
+
+2025-05-31 19:17:10+0900: GTP Engine starting...
+2025-05-31 19:17:10+0900: KataGo v1.15.3
+2025-05-31 19:17:10+0900: Using Japanese rules initially, unless GTP/GUI overrides this
+2025-05-31 19:17:10+0900: Using 1 CPU thread(s) for search
+2025-05-31 19:17:10+0900: nnRandSeed0 = 17983589128069890606
+2025-05-31 19:17:10+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-05-31 19:17:10+0900: Initializing neural net buffer to be size 19 * 19 exactly
+2025-05-31 19:17:13+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-05-31 19:17:13+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-05-31 19:17:13+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-05-31 19:17:14+0900: Loaded neural net with nnXLen 19 nnYLen 19
+2025-05-31 19:17:14+0900: nnRandSeed0 = 17901493981738048566
+2025-05-31 19:17:14+0900: After dedups: nnModelFile0 = ../../models/b18c384nbt-humanv0.bin.gz useFP16 auto useNHWC auto
+2025-05-31 19:17:14+0900: Initializing neural net buffer to be size 19 * 19 exactly
+2025-05-31 19:17:16+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-05-31 19:17:16+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-05-31 19:17:16+0900: Cuda backend thread 0: Model name: b18c384nbt-humanv0
+2025-05-31 19:17:16+0900: Loaded human SL net with nnXLen 19 nnYLen 19
+2025-05-31 19:17:16+0900: Initializing board with boardXSize 19 boardYSize 19
+2025-05-31 19:17:16+0900: --------------
+2025-05-31 19:17:16+0900: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from human5k_pure.cfg
+2025-05-31 19:17:16+0900: WARNING: Unused key 'reportIncludeHumanPolicy' in human5k_pure.cfg
+2025-05-31 19:17:16+0900: --------------
+2025-05-31 19:17:16+0900: Loaded config human5k_pure.cfg
+2025-05-31 19:17:16+0900: Loaded model ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-05-31 19:17:16+0900: Loaded human SL model ../../models/b18c384nbt-humanv0.bin.gz
+2025-05-31 19:17:16+0900: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-05-31 19:17:16+0900: Human SL model name: b18c384nbt-humanv0
+2025-05-31 19:17:16+0900: GTP ready, beginning main protocol loop
+2025-05-31 19:17:26+0900: Controller: boardsize 19
+2025-05-31 19:17:26+0900: = 
+2025-05-31 19:17:56+0900: Controller: play B C4
+2025-05-31 19:17:56+0900: = 
+2025-05-31 19:18:06+0900: Controller: play W D16
+2025-05-31 19:18:06+0900: = 
+2025-05-31 19:18:25+0900: Controller: genmove_analyze B
+2025-05-31 19:18:25+0900: =
+2025-05-31 19:18:29+0900: MoveNum: 2 HASH: 87BBD3F60F9702ABD53F565F0B7BE194
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . .
+16 . . . O2. . . . . . . . . . . . . . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . X1. . . . . . . . . . . . . . . .
+ 3 . . . . . . . . . . . . . . . @ . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Time taken: 3.94268
+Root visits: 200
+New playouts: 200
+NN rows: 202
+NN batches: 202
+NN avg batch size: 1
+PV: Q3 Q16 R5 E3 D5 H3
+Tree:
+: T  -5.41c W  -5.23c S  -0.19c ( -0.4 L  -0.3) N     200  --  Q3 Q16 R5 E3 D5 H3
+---Black(^)---
+Q3  : T  -5.63c W  -5.44c S  -0.20c ( -0.4 L  -0.4) LCB  -12.89c P  4.74% WF  10.0 PSV     115 N      10  --  Q3 Q16 R5 E3 D5 H3
+Q4  : T  -5.76c W  -5.53c S  -0.24c ( -0.5 L  -0.4) LCB  -16.43c P  3.77% WF   8.0 PSV      33 N       8  --  Q4 Q16 R6 E3 D5 H3 R17 Q17
+R4  : T  -4.95c W  -4.80c S  -0.16c ( -0.3 L  -0.3) LCB   -5.87c P 37.11% WF 131.3 PSV      20 N     131  --  R4 Q16 F4 P4 P3 O3 Q3 O4
+Q17 : T  -5.86c W  -5.63c S  -0.24c ( -0.5 L  -0.4) LCB  -10.46c P  6.88% WF  13.0 PSV      15 N      13  --  Q17 Q4 R14 E3 D5 H3 R6
+Q16 : T  -7.39c W  -7.13c S  -0.26c ( -0.6 L  -0.4) LCB  -47.21c P  4.17% WF   4.0 PSV       6 N       4  --  Q16 Q4 R3 R4
+R16 : T  -5.93c W  -5.70c S  -0.23c ( -0.5 L  -0.4) LCB   -8.91c P  8.78% WF  16.9 PSV       5 N      17  --  R16 Q4 F3 P17 Q15 M17 C14
+P4  : T  -6.29c W  -6.09c S  -0.20c ( -0.4 L  -0.4) LCB  -32.17c P  3.03% WF   5.0 PSV       1 N       5  --  P4 R3 R5 P2
+C17 : T  -9.81c W  -9.52c S  -0.29c ( -0.6 L  -0.4) LCB  -78.43c P  5.49% WF   3.0 PSV       0 N       3  --  C17 C16 D17
+F3  : T  -6.11c W  -5.85c S  -0.26c ( -0.6 L  -0.4) LCB  -45.83c P  2.84% WF   4.0 PSV       0 N       4  --  F3 Q4 R17
+E4  : T  -8.84c W  -8.50c S  -0.34c ( -0.7 L  -0.5) LCB -147.14c P  2.65% WF   2.0 PSV       0 N       2  --  E4 Q4
+
+2025-05-31 19:18:29+0900: play Q3
+2025-05-31 19:23:08+0900: Controller: exit
+2025-05-31 19:23:08+0900: ? unknown command
+2025-05-31 19:23:11+0900: Controller: exit()
+2025-05-31 19:23:11+0900: ? unknown command
+2025-05-31 19:23:12+0900: Controller: quit
+2025-05-31 19:23:12+0900: Quit requested by controller
+2025-05-31 19:23:12+0900: = 
+2025-05-31 19:23:12+0900: GPU -1 finishing, processed 202 rows 202 batches
+2025-05-31 19:23:12+0900: GPU -1 finishing, processed 2 rows 2 batches
+2025-05-31 19:23:12+0900: All cleaned up, quitting

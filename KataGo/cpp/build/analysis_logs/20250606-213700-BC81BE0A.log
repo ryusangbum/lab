@@ -1,0 +1,251 @@
+2025-06-06 21:37:00+0900: Running with following config:
+analysisIgnorePreRootHistory = false
+chosenMovePrune = 0
+chosenMoveSubtract = 0
+chosenMoveTemperature = 1.0
+chosenMoveTemperatureEarly = 1.0
+chosenMoveTemperatureOnlyBelowProb = 0.0
+humanSLChosenMoveIgnorePass = true
+humanSLChosenMovePiklLambda = 100000000
+humanSLChosenMoveProp = 1.0
+humanSLOppExploreProbWeightful = 0.0
+humanSLOppExploreProbWeightless = 0.0
+humanSLPlaExploreProbWeightful = 0.0
+humanSLPlaExploreProbWeightless = 0.0
+humanSLProfile = rank_5k
+humanSLRootExploreProbWeightful = 0.0
+humanSLRootExploreProbWeightless = 0.0
+ignorePreRootHistory = false
+logDir = analysis_logs
+logSearchInfo = true
+logToStderr = true
+maxVisits = 1
+nnCacheSizePowerOfTwo = 17
+nnMaxBatchSize = 8
+nnMutexPoolSizePowerOfTwo = 14
+nnRandomize = false
+numAnalysisThreads = 1
+numSearchThreads = 4
+reportAnalysisWinratesAs = BLACK
+rootNumSymmetriesToSample = 1
+rules = japanese
+subtreeValueBiasFactor = 0.0
+useLcbForSelection = false
+useNoisePruning = false
+useUncertainty = false
+
+2025-06-06 21:37:00+0900: Analysis Engine starting...
+2025-06-06 21:37:00+0900: KataGo v1.15.3
+2025-06-06 21:37:00+0900: nnRandSeed0 = 5045658645509978469
+2025-06-06 21:37:00+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-06-06 21:37:00+0900: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2025-06-06 21:37:03+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-06-06 21:37:03+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-06-06 21:37:03+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-06-06 21:37:04+0900: nnRandSeed0 = 1793889485191763384
+2025-06-06 21:37:04+0900: After dedups: nnModelFile0 = ../../models/b18c384nbt-humanv0.bin.gz useFP16 auto useNHWC auto
+2025-06-06 21:37:04+0900: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2025-06-06 21:37:06+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-06-06 21:37:06+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-06-06 21:37:06+0900: Cuda backend thread 0: Model name: b18c384nbt-humanv0
+2025-06-06 21:37:06+0900: --------------
+2025-06-06 21:37:06+0900: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from human5k_pure.cfg
+2025-06-06 21:37:06+0900: WARNING: Unused key 'analysisIgnorePreRootHistory' in human5k_pure.cfg
+2025-06-06 21:37:06+0900: WARNING: Unused key 'rules' in human5k_pure.cfg
+2025-06-06 21:37:06+0900: --------------
+2025-06-06 21:37:06+0900: Loaded config human5k_pure.cfg
+2025-06-06 21:37:06+0900: Loaded model ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-06-06 21:37:06+0900: Analyzing up to 1 positions at a time in parallel
+2025-06-06 21:37:06+0900: Started, ready to begin handling requests
+2025-06-06 21:37:07+0900: MoveNum: 2 HASH: EB5B48764F3CF87F19236A45508C4ACB
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . .
+16 . . . . . . . . . . . . . . . O2. . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X1. . . . . . . . . . . . . . .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Root visits: 53
+New playouts: 53
+NN rows: 53
+NN batches: 28
+NN avg batch size: 1.89286
+PV: Q4 D16 C14 R3 R4 Q3 P4 O2 O17 C15
+Tree:
+: T  -6.10c W  -6.02c S  -0.08c ( -0.4 L  -0.4) N      53  --  Q4 D16 C14 R3 R4 Q3 P4
+---Black(^)---
+Q4  : T  -3.84c W  -3.94c S   0.10c ( -0.2 L  -0.3) LCB  -11.22c P 27.60% WF  16.1 PSV       9 N      16  --  Q4 D16 C14 R3 R4 Q3 P4 O2
+R4  : T  -5.13c W  -4.99c S  -0.14c ( -0.5 L  -0.4) LCB  -11.29c P  3.12% WF  11.0 PSV       7 N      11  --  R4 D16 C6 P3 Q5 M3 C17 D17
+Q3  : T  -7.31c W  -7.12c S  -0.19c ( -0.5 L  -0.4) LCB  -50.38c P  1.77% WF   4.0 PSV       4 N       4  --  Q3 D16 C17 C16
+Q5  : T  -7.60c W  -7.42c S  -0.17c ( -0.5 L  -0.3) LCB -357.60c P  1.54% WF   1.0 PSV       0 N       1  --  Q5
+R14 : T  -7.58c W  -7.55c S  -0.03c ( -0.4 L  -0.4) LCB  -18.81c P  5.73% WF   7.9 PSV       0 N       8  --  R14 Q4 D16 R15 Q14 O16 Q10 C3
+R17 : T  -9.16c W  -8.90c S  -0.25c ( -0.6 L  -0.5) LCB  -20.37c P  8.02% WF   7.9 PSV       0 N       8  --  R17 R16 Q17 P16 O18
+F3  : T  -6.93c W  -6.63c S  -0.31c ( -0.6 L  -0.5) LCB  -49.87c P  1.55% WF   4.0 PSV       0 N       4  --  F3 D16 R4
+
+2025-06-06 21:37:07+0900: MoveNum: 3 HASH: ABE8C8E42B2E2035E1349826078FDC53
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . .
+16 . . . . . . . . . . . . . . . O2. . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X1. . . . . . . . . . . X3. . .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Root visits: 53
+New playouts: 53
+NN rows: 92
+NN batches: 49
+NN avg batch size: 1.87755
+PV: D16 C14 R3 R4 Q3 P4 O2 O17 C15 D14
+Tree:
+: T  -4.48c W  -4.58c S   0.11c ( -0.2 L  -0.2) N      53  --  D16 C14 R3 R4 Q3 P4 O2
+---White(v)---
+D16 : T  -5.87c W  -5.83c S  -0.05c ( -0.4 L  -0.3) LCB   -3.71c P 83.54% WF  33.2 PSV      21 N      33  --  D16 C14 R3 R4 Q3 P4 O2 O17
+C16 : T  -1.97c W  -2.34c S   0.37c ( +0.0 L  -0.0) LCB    5.47c P  6.50% WF   9.9 PSV       9 N      10  --  C16 R17 Q17 R16 Q15 R14 C3 C4
+D17 : T  -1.75c W  -2.16c S   0.41c ( +0.1 L  -0.1) LCB    7.34c P  3.29% WF   8.9 PSV       4 N       9  --  D17 C15 R3 R4 Q3
+
+2025-06-06 21:37:07+0900: MoveNum: 4 HASH: 17D2632FFE99EE885E49C52015E7A3AA
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . .
+16 . . . O3. . . . . . . . . . . O1. . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X . . . . . . . . . . . X2. . .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Root visits: 53
+New playouts: 53
+NN rows: 132
+NN batches: 70
+NN avg batch size: 1.88571
+PV: K4
+Tree:
+: T  -7.02c W  -6.73c S  -0.29c ( -0.4 L  -0.4) N      53  --  K4
+---Black(^)---
+R14 : T  -6.47c W  -6.21c S  -0.26c ( -0.4 L  -0.4) LCB   -9.64c P 30.18% WF  23.1 PSV      28 N      23  --  R14 C3 C4 D3 E4 F2 F17 R15
+O17 : T  -6.85c W  -6.68c S  -0.17c ( -0.3 L  -0.3) LCB  -18.34c P  4.85% WF   8.0 PSV       5 N       8  --  O17 P17 O16 Q14 K16 C3
+R6  : T  -9.18c W  -8.60c S  -0.58c ( -0.7 L  -0.5) LCB  -28.73c P  0.59% WF   6.0 PSV       1 N       6  --  R6 C3 D3 C4 D5
+R17 : T  -5.78c W  -5.59c S  -0.19c ( -0.3 L  -0.3) LCB  -12.27c P  9.85% WF  11.0 PSV       1 N      11  --  R17 R16 Q17 P16 O18 C3 C4 D3
+R13 : T -14.49c W -13.77c S  -0.72c ( -0.8 L  -0.6) LCB -163.55c P  0.40% WF   2.0 PSV       0 N       2  --  R13 C3
+O3  : T  -8.97c W  -8.43c S  -0.54c ( -0.7 L  -0.5) LCB -157.91c P  0.53% WF   2.0 PSV       0 N       2  --  O3 C3
+
+2025-06-06 21:37:08+0900: MoveNum: 5 HASH: 53272E5DA78A5BD8F63F1DD47B576E62
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . .
+16 . . . O2. . . . . . . . . . . O . . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X . . . . . X3. . . . . X1. . .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Root visits: 53
+New playouts: 53
+NN rows: 184
+NN batches: 97
+NN avg batch size: 1.89691
+PV: K16
+Tree:
+: T  -9.58c W  -9.39c S  -0.19c ( -0.7 L  -0.5) N      53  --  K16
+---White(v)---
+C6  : T -12.03c W -11.71c S  -0.32c ( -0.8 L  -0.6) LCB   -7.42c P 20.38% WF  13.1 PSV      26 N      13  --  C6 R17 R16 Q17 P16 O18 C3
+C3  : T -10.36c W -10.05c S  -0.31c ( -0.8 L  -0.5) LCB   -6.22c P 24.59% WF  14.0 PSV       1 N      14  --  C3 D3 C4 D5 C6 R17 R16
+C14 : T  -9.84c W  -9.66c S  -0.18c ( -0.7 L  -0.5) LCB   -3.33c P  2.38% WF  12.0 PSV       1 N      12  --  C14 R17 Q17 R16 Q15 R14 R3 R4
+F17 : T  -7.20c W  -7.23c S   0.03c ( -0.5 L  -0.4) LCB   12.52c P  0.95% WF   5.9 PSV       0 N       6  --  F17 R17 Q17 R16 Q15 R14
+G17 : T  -3.01c W  -3.17c S   0.16c ( -0.4 L  -0.3) LCB  346.99c P  0.65% WF   1.0 PSV       0 N       1  --  G17
+D14 : T  -5.70c W  -5.78c S   0.08c ( -0.4 L  -0.3) LCB   37.27c P  0.64% WF   3.9 PSV       0 N       4  --  D14 R17 Q17 R16
+F16 : T  -4.40c W  -4.48c S   0.08c ( -0.4 L  -0.3) LCB  144.61c P  0.41% WF   2.0 PSV       0 N       2  --  F16 R17
+
+2025-06-06 21:37:08+0900: MoveNum: 6 HASH: 8BA1D3971CCEEFB76EE9C993A83D0010
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . .
+16 . . . O1. . . . . . . . . . . O . . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X . . . . . X2. . . . . X . . .
+ 3 . . . . . . . . . . . . . . . . O3. .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Root visits: 53
+New playouts: 53
+NN rows: 235
+NN batches: 124
+NN avg batch size: 1.89516
+PV: Q3 R4 Q5 R5 R7 Q2 P2
+Tree:
+: T -10.84c W -10.57c S  -0.26c ( -0.8 L  -0.6) N      53  --  Q3 R4 Q5 R5 R7 Q2 P2
+---Black(^)---
+Q3  : T  -7.75c W  -7.69c S  -0.06c ( -0.6 L  -0.4) LCB  -15.30c P 93.93% WF  41.5 PSV      37 N      41  --  Q3 R4 Q5 R5 R7 Q2 P2
+R4  : T -23.67c W -22.39c S  -1.28c ( -1.7 L  -1.2) LCB  -68.11c P  1.16% WF   3.8 PSV       4 N       4  --  R4 Q3 O3 P3
+C17 : T -22.48c W -21.56c S  -0.91c ( -1.4 L  -1.0) LCB  -65.53c P  1.73% WF   3.8 PSV       0 N       4  --  C17 Q3 C16 D15
+R17 : T -22.70c W -21.74c S  -0.97c ( -1.4 L  -1.0) LCB  -96.66c P  1.48% WF   2.9 PSV       0 N       3  --  R17 Q3 R16
+

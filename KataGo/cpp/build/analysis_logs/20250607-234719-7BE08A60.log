@@ -1,0 +1,85 @@
+2025-06-07 23:47:19+0900: Running with following config:
+analysisIgnorePreRootHistory = false
+chosenMovePrune = 0
+chosenMoveSubtract = 0
+chosenMoveTemperature = 1.0
+chosenMoveTemperatureEarly = 1.0
+chosenMoveTemperatureOnlyBelowProb = 0.0
+ignorePreRootHistory = false
+logDir = analysis_logs
+logSearchInfo = true
+logToStderr = true
+maxVisits = 2000
+nnCacheSizePowerOfTwo = 17
+nnMaxBatchSize = 8
+nnMutexPoolSizePowerOfTwo = 14
+nnRandomize = false
+numAnalysisThreads = 1
+numSearchThreads = 4
+reportAnalysisWinratesAs = BLACK
+rootNumSymmetriesToSample = 1
+rules = japanese
+subtreeValueBiasFactor = 0.0
+useLcbForSelection = false
+useNoisePruning = false
+useUncertainty = false
+
+2025-06-07 23:47:19+0900: Analysis Engine starting...
+2025-06-07 23:47:19+0900: KataGo v1.15.3
+2025-06-07 23:47:19+0900: nnRandSeed0 = 2516368736368143492
+2025-06-07 23:47:19+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-06-07 23:47:19+0900: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2025-06-07 23:47:22+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-06-07 23:47:22+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-06-07 23:47:22+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-06-07 23:47:23+0900: --------------
+2025-06-07 23:47:23+0900: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from analysis.cfg
+2025-06-07 23:47:23+0900: WARNING: Unused key 'analysisIgnorePreRootHistory' in analysis.cfg
+2025-06-07 23:47:23+0900: WARNING: Unused key 'rules' in analysis.cfg
+2025-06-07 23:47:23+0900: --------------
+2025-06-07 23:47:23+0900: Loaded config analysis.cfg
+2025-06-07 23:47:23+0900: Loaded model ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-06-07 23:47:23+0900: Analyzing up to 1 positions at a time in parallel
+2025-06-07 23:47:23+0900: Started, ready to begin handling requests
+2025-06-07 23:47:24+0900: MoveNum: 200 HASH: 418CF69CED59D9D374BCE30F913E606A
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . X . . . . . . . .
+18 . O1. X X . O . O X O O . O X X . . .
+17 O . . X O O . O O X O . O . O X . . .
+16 . . X . X O O X O X X O O . O . X . .
+15 O X X X O . X X X X . . . . . O . . .
+14 . O O O O . . . O X . O O X X X X . .
+13 . . . O . O . X X O O . X O . . . . .
+12 . . . . O X . . . X X . X . . . . . .
+11 . . . O X X . . X . . . . X . . X X .
+10 . . . O X O O3X . . . X2O O X X O O .
+ 9 . . . . O . O O O O O X O X X O . . O
+ 8 . . . X X . . O X X . X O . O O O O O
+ 7 . . O O . X X X O . X . . O O O X X .
+ 6 . . . . . . O O O . . X X O X O O X .
+ 5 . . . . O O O X X X X O X X X X X . .
+ 4 . O O O O X O X O . . . O X X O O X .
+ 3 . X X O X X X O O . X . O X O O . O X
+ 2 . . X X . . . X X . . O . O X O O O X
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Root visits: 203
+New playouts: 203
+NN rows: 201
+NN batches: 101
+NN avg batch size: 1.9901
+PV: G11 D9 A4 A5 A3 B5 L2 R15
+Tree:
+: T 100.37c W  97.33c S   3.04c ( +8.4 L  +8.3) N     203  --  G11 D9 A4 A5 A3 B5 L2
+---Black(^)---
+G11 : T 103.32c W  99.34c S   4.01c ( +9.0 L  +9.0) LCB  102.55c P 67.42% WF  90.6 PSV      89 N      89  --  G11 D9 A4 A5 A3 B5 L2 R15
+G12 : T  99.36c W  96.66c S   2.67c ( +8.1 L  +7.8) LCB   84.20c P  7.10% WF  18.9 PSV       5 N      19  --  G12 D9 A4 A5 A3
+A16 : T 102.31c W  98.81c S   3.66c ( +8.9 L  +8.8) LCB  100.50c P  3.36% WF  29.2 PSV       3 N      29  --  A16 B16 G11 D9 A4 A5 A3 B5
+H11 : T 101.92c W  99.41c S   2.51c ( +8.0 L  +7.9) LCB  100.55c P  3.50% WF  26.1 PSV       3 N      26  --  H11 D9 A4 A5 A3 B5
+F15 : T  78.18c W  79.88c S  -1.67c ( +4.8 L  +4.4) LCB   10.13c P 13.02% WF  11.6 PSV       3 N      13  --  F15 G12 F18 D16 A4 A5 E16 N11
+A14 : T 101.70c W  98.81c S   2.88c ( +8.2 L  +8.2) LCB   96.73c P  1.31% WF  14.0 PSV       1 N      14  --  A14 A16 G11 D9 A4 A5
+N2  : T 101.03c W  99.14c S   1.88c ( +7.5 L  +7.4) LCB   89.44c P  0.86% WF   8.0 PSV       0 N       8  --  N2 N1 G11 D9 A4 A5
+O1  : T  99.80c W  98.43c S   1.35c ( +7.2 L  +7.1) LCB   25.31c P  0.61% WF   3.0 PSV       0 N       3  --  O1 P1 G11
+D9  : T -103.96c W -93.74c S -10.22c ( -1.4 L  -2.9) LCB -454.38c P  0.66% WF   0.5 PSV       0 N       1  --  D9
+

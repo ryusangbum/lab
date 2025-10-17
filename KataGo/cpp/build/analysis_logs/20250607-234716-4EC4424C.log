@@ -1,0 +1,34 @@
+2025-06-07 23:47:16+0900: Running with following config:
+analysisIgnorePreRootHistory = false
+chosenMovePrune = 0
+chosenMoveSubtract = 0
+chosenMoveTemperature = 1.0
+chosenMoveTemperatureEarly = 1.0
+chosenMoveTemperatureOnlyBelowProb = 0.0
+ignorePreRootHistory = false
+logDir = analysis_logs
+logSearchInfo = true
+logToStderr = true
+maxVisits = 2000
+nnCacheSizePowerOfTwo = 17
+nnMaxBatchSize = 8
+nnMutexPoolSizePowerOfTwo = 14
+nnRandomize = false
+numAnalysisThreads = 1
+numSearchThreads = 4
+reportAnalysisWinratesAs = BLACK
+rootNumSymmetriesToSample = 1
+rules = japanese
+subtreeValueBiasFactor = 0.0
+useLcbForSelection = false
+useNoisePruning = false
+useUncertainty = false
+
+2025-06-07 23:47:16+0900: Analysis Engine starting...
+2025-06-07 23:47:16+0900: KataGo v1.15.3
+2025-06-07 23:47:16+0900: nnRandSeed0 = 3483079403853789976
+2025-06-07 23:47:16+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-06-07 23:47:16+0900: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2025-06-07 23:47:19+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-06-07 23:47:19+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-06-07 23:47:19+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792

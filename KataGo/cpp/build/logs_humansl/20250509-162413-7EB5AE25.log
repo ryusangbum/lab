@@ -1,0 +1,93 @@
+2025-05-09 16:24:13+0900: Running with following config:
+humanSLChosenMoveIgnorePass = true
+humanSLChosenMovePiklLambda = 100000000
+humanSLChosenMoveProp = 1.0
+humanSLProfile = rank_3d
+lagBuffer = 1.0
+logAllGTPCommunication = true
+logDir = logs_humansl
+logSearchInfo = true
+logToStderr = true
+maxVisits = 40
+numSearchThreads = 1
+rules = japanese
+
+2025-05-09 16:24:13+0900: GTP Engine starting...
+2025-05-09 16:24:13+0900: KataGo v1.15.3
+2025-05-09 16:24:13+0900: Using Japanese rules initially, unless GTP/GUI overrides this
+2025-05-09 16:24:13+0900: Using 1 CPU thread(s) for search
+2025-05-09 16:24:13+0900: nnRandSeed0 = 286861902508553901
+2025-05-09 16:24:13+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-05-09 16:24:13+0900: Initializing neural net buffer to be size 19 * 19 exactly
+2025-05-09 16:24:15+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-05-09 16:24:15+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-05-09 16:24:15+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-05-09 16:24:17+0900: Loaded neural net with nnXLen 19 nnYLen 19
+2025-05-09 16:24:17+0900: nnRandSeed0 = 16103998372663238161
+2025-05-09 16:24:17+0900: After dedups: nnModelFile0 = ../../models/b18c384nbt-humanv0.bin.gz useFP16 auto useNHWC auto
+2025-05-09 16:24:17+0900: Initializing neural net buffer to be size 19 * 19 exactly
+2025-05-09 16:24:18+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-05-09 16:24:18+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-05-09 16:24:18+0900: Cuda backend thread 0: Model name: b18c384nbt-humanv0
+2025-05-09 16:24:18+0900: Loaded human SL net with nnXLen 19 nnYLen 19
+2025-05-09 16:24:18+0900: Initializing board with boardXSize 19 boardYSize 19
+2025-05-09 16:24:18+0900: Loaded config human5k_pure.cfg
+2025-05-09 16:24:18+0900: Loaded model ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-05-09 16:24:18+0900: Loaded human SL model ../../models/b18c384nbt-humanv0.bin.gz
+2025-05-09 16:24:18+0900: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-05-09 16:24:18+0900: Human SL model name: b18c384nbt-humanv0
+2025-05-09 16:24:18+0900: GTP ready, beginning main protocol loop
+2025-05-09 16:24:25+0900: Controller: boardsize 19
+2025-05-09 16:24:25+0900: = 
+2025-05-09 16:24:29+0900: Controller: clear_borad
+2025-05-09 16:24:29+0900: ? unknown command
+2025-05-09 16:24:32+0900: Controller: clearboard
+2025-05-09 16:24:32+0900: ? unknown command
+2025-05-09 16:24:36+0900: Controller: clear_board
+2025-05-09 16:24:36+0900: = 
+2025-05-09 16:24:47+0900: Controller: clear_board
+2025-05-09 16:24:47+0900: = 
+2025-05-09 16:24:50+0900: Controller: play B D4
+2025-05-09 16:24:50+0900: = 
+2025-05-09 16:24:52+0900: Controller: play W Q16
+2025-05-09 16:24:52+0900: = 
+2025-05-09 16:24:54+0900: Controller: genmove B
+2025-05-09 16:24:55+0900: MoveNum: 2 HASH: EB5B48764F3CF87F19236A45508C4ACB
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . .
+16 . . . . . . . . . . . . . . . O2. . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X1. . . . . . . . . . . . @ . .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Time taken: 0.624124
+Root visits: 40
+New playouts: 40
+NN rows: 40
+NN batches: 40
+NN avg batch size: 1
+PV: R4 D16 C6 P3 Q5 M3 C17
+Tree:
+: T  -6.78c W  -6.31c S  -0.08c ( -0.4 L  -0.4) N      40  --  R4 D16 C6 P3 Q5 M3 C17
+---Black(^)---
+R4  : T  -5.66c W  -5.31c S  -0.16c ( -0.5 L  -0.4) LCB  -14.45c P  3.00% WF  30.7 PSV      69 N       9  --  R4 D16 C6 P3 Q5 M3 C17
+Q4  : T  -6.78c W  -6.23c S  -0.04c ( -0.4 L  -0.4) LCB   -8.39c P 26.15% WF  81.9 PSV      54 N      25  --  Q4 D16 R14 C3 C4 D3 E4 F2
+R17 : T  -9.17c W  -8.66c S  -0.14c ( -0.5 L  -0.4) LCB -158.48c P  7.41% WF   6.0 PSV       3 N       2  --  R17 R16
+R14 : T  -8.44c W  -8.18c S  -0.15c ( -0.5 L  -0.4) LCB  -82.57c P  6.20% WF   9.2 PSV       1 N       3  --  R14 Q4 D16
+
+2025-05-09 16:24:55+0900: = R4

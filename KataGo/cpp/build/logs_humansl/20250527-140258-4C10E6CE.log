@@ -1,0 +1,32 @@
+2025-05-27 14:02:58+0900: Running with following config:
+humanSLChosenMoveIgnorePass = true
+humanSLChosenMovePiklLambda = 100000000
+humanSLChosenMoveProp = 1.0
+humanSLProfile = rank_3d
+includeMovesOwnership = false
+includeOwnership = false
+includePV = false
+includePolicy = true
+includeScoreMean = false
+includeScoreStdev = false
+includeUtility = false
+lagBuffer = 1.0
+logAllGTPCommunication = false
+logDir = logs_humansl
+logSearchInfo = false
+logToStderr = false
+maxBoardSize = 19
+maxBoardXSize = 19
+maxBoardYSize = 19
+maxPlayouts = 0
+maxTime = 0.0
+maxVisits = 40
+nnCacheSizePowerOfTwo = 20
+nnMaxBatchSize = 1
+numAnalysisThreads = 1
+numSearchThreads = 1
+rules = japanese
+
+2025-05-27 14:02:58+0900: GTP Engine starting...
+2025-05-27 14:02:58+0900: KataGo v1.15.3
+2025-05-27 14:02:58+0900: Using Japanese rules initially, unless GTP/GUI overrides this

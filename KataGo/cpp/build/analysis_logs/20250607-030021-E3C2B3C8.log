@@ -1,0 +1,60 @@
+2025-06-07 03:00:21+0900: Running with following config:
+analysisIgnorePreRootHistory = false
+chosenMovePrune = 0
+chosenMoveSubtract = 0
+chosenMoveTemperature = 1.0
+chosenMoveTemperatureEarly = 1.0
+chosenMoveTemperatureOnlyBelowProb = 0.0
+humanSLChosenMoveIgnorePass = true
+humanSLChosenMovePiklLambda = 100000000
+humanSLChosenMoveProp = 1.0
+humanSLOppExploreProbWeightful = 0.0
+humanSLOppExploreProbWeightless = 0.0
+humanSLPlaExploreProbWeightful = 0.0
+humanSLPlaExploreProbWeightless = 0.0
+humanSLProfile = rank_5k
+humanSLRootExploreProbWeightful = 0.0
+humanSLRootExploreProbWeightless = 0.0
+ignorePreRootHistory = false
+logDir = analysis_logs
+logSearchInfo = true
+logToStderr = true
+maxVisits = 1
+nnCacheSizePowerOfTwo = 17
+nnMaxBatchSize = 8
+nnMutexPoolSizePowerOfTwo = 14
+nnRandomize = false
+numAnalysisThreads = 1
+numSearchThreads = 4
+reportAnalysisWinratesAs = BLACK
+rootNumSymmetriesToSample = 1
+rules = japanese
+subtreeValueBiasFactor = 0.0
+useLcbForSelection = false
+useNoisePruning = false
+useUncertainty = false
+
+2025-06-07 03:00:21+0900: Analysis Engine starting...
+2025-06-07 03:00:21+0900: KataGo v1.15.3
+2025-06-07 03:00:21+0900: nnRandSeed0 = 9820688142167228573
+2025-06-07 03:00:21+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-06-07 03:00:21+0900: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2025-06-07 03:00:24+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-06-07 03:00:24+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-06-07 03:00:24+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-06-07 03:00:25+0900: nnRandSeed0 = 7393938591847577668
+2025-06-07 03:00:25+0900: After dedups: nnModelFile0 = ../../models/b18c384nbt-humanv0.bin.gz useFP16 auto useNHWC auto
+2025-06-07 03:00:25+0900: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2025-06-07 03:00:26+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-06-07 03:00:26+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-06-07 03:00:26+0900: Cuda backend thread 0: Model name: b18c384nbt-humanv0
+2025-06-07 03:00:26+0900: --------------
+2025-06-07 03:00:26+0900: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from human5k_pure.cfg
+2025-06-07 03:00:26+0900: WARNING: Unused key 'analysisIgnorePreRootHistory' in human5k_pure.cfg
+2025-06-07 03:00:26+0900: WARNING: Unused key 'rules' in human5k_pure.cfg
+2025-06-07 03:00:26+0900: --------------
+2025-06-07 03:00:26+0900: Loaded config human5k_pure.cfg
+2025-06-07 03:00:26+0900: Loaded model ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-06-07 03:00:26+0900: Analyzing up to 1 positions at a time in parallel
+2025-06-07 03:00:26+0900: Started, ready to begin handling requests
+2025-06-07 03:00:26+0900: Error: {"error":"Must be an array of pairs of the form: [\"b\" or \"w\", GTP board vertex]","field":"moves","id":"rollout_1"}

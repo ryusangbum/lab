@@ -1,0 +1,1093 @@
+2025-05-14 16:48:45+0900: Running with following config:
+humanSLChosenMoveIgnorePass = true
+humanSLChosenMovePiklLambda = 100000000
+humanSLChosenMoveProp = 1.0
+humanSLProfile = rank_3d
+includeMovesOwnership = false
+includeOwnership = false
+includePV = false
+includePolicy = true
+includeScoreMean = false
+includeScoreStdev = false
+includeUtility = false
+lagBuffer = 1.0
+logAllGTPCommunication = true
+logDir = logs_humansl
+logSearchInfo = true
+logToStderr = true
+maxVisits = 40
+numSearchThreads = 1
+rules = japanese
+
+2025-05-14 16:48:45+0900: GTP Engine starting...
+2025-05-14 16:48:45+0900: KataGo v1.15.3
+2025-05-14 16:48:45+0900: Using Japanese rules initially, unless GTP/GUI overrides this
+2025-05-14 16:48:45+0900: Using 1 CPU thread(s) for search
+2025-05-14 16:48:45+0900: nnRandSeed0 = 3560258376201417929
+2025-05-14 16:48:45+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-05-14 16:48:45+0900: Initializing neural net buffer to be size 19 * 19 exactly
+2025-05-14 16:48:47+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-05-14 16:48:47+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-05-14 16:48:47+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-05-14 16:48:49+0900: Loaded neural net with nnXLen 19 nnYLen 19
+2025-05-14 16:48:49+0900: nnRandSeed0 = 7249121874458474171
+2025-05-14 16:48:49+0900: After dedups: nnModelFile0 = ../../models/b18c384nbt-humanv0.bin.gz useFP16 auto useNHWC auto
+2025-05-14 16:48:49+0900: Initializing neural net buffer to be size 19 * 19 exactly
+2025-05-14 16:48:50+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-05-14 16:48:50+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-05-14 16:48:50+0900: Cuda backend thread 0: Model name: b18c384nbt-humanv0
+2025-05-14 16:48:50+0900: Loaded human SL net with nnXLen 19 nnYLen 19
+2025-05-14 16:48:50+0900: Initializing board with boardXSize 19 boardYSize 19
+2025-05-14 16:48:50+0900: --------------
+2025-05-14 16:48:50+0900: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from human5k_pure.cfg
+2025-05-14 16:48:50+0900: WARNING: Unused key 'includeMovesOwnership' in human5k_pure.cfg
+2025-05-14 16:48:50+0900: WARNING: Unused key 'includeOwnership' in human5k_pure.cfg
+2025-05-14 16:48:50+0900: WARNING: Unused key 'includePV' in human5k_pure.cfg
+2025-05-14 16:48:50+0900: WARNING: Unused key 'includePolicy' in human5k_pure.cfg
+2025-05-14 16:48:50+0900: WARNING: Unused key 'includeScoreMean' in human5k_pure.cfg
+2025-05-14 16:48:50+0900: WARNING: Unused key 'includeScoreStdev' in human5k_pure.cfg
+2025-05-14 16:48:50+0900: WARNING: Unused key 'includeUtility' in human5k_pure.cfg
+2025-05-14 16:48:50+0900: --------------
+2025-05-14 16:48:50+0900: Loaded config human5k_pure.cfg
+2025-05-14 16:48:50+0900: Loaded model ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-05-14 16:48:50+0900: Loaded human SL model ../../models/b18c384nbt-humanv0.bin.gz
+2025-05-14 16:48:50+0900: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-05-14 16:48:50+0900: Human SL model name: b18c384nbt-humanv0
+2025-05-14 16:48:50+0900: GTP ready, beginning main protocol loop
+2025-05-14 16:48:50+0900: Controller: boardsize 19
+2025-05-14 16:48:50+0900: = 
+2025-05-14 16:48:50+0900: Controller: clear_board
+2025-05-14 16:48:50+0900: = 
+2025-05-14 16:48:50+0900: Controller: play B D4
+2025-05-14 16:48:50+0900: = 
+2025-05-14 16:48:50+0900: Controller: play W Q16
+2025-05-14 16:48:50+0900: = 
+2025-05-14 16:48:50+0900: Controller: genmove B
+2025-05-14 16:48:51+0900: MoveNum: 2 HASH: EB5B48764F3CF87F19236A45508C4ACB
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . .
+16 . . . . . . . . . . . . . . . O2. . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X1. . . . . . . . . . . . @ . .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Time taken: 0.585106
+Root visits: 40
+New playouts: 40
+NN rows: 40
+NN batches: 40
+NN avg batch size: 1
+PV: R4 D16 C6
+Tree:
+: T  -5.90c W  -5.86c S  -0.03c ( -0.4 L  -0.4) N      40  --  R4 D16 C6
+---Black(^)---
+R4  : T  -3.52c W  -4.13c S  -0.12c ( -0.5 L  -0.4) LCB  -77.36c P  3.00% WF  10.3 PSV      68 N       3  --  R4 D16 C6
+Q4  : T  -5.60c W  -5.61c S  -0.00c ( -0.4 L  -0.3) LCB   -7.25c P 26.15% WF 101.9 PSV      50 N      31  --  Q4 D16 C14 R3 R4 Q3 P4 O2
+R17 : T -10.37c W  -9.54c S  -0.20c ( -0.5 L  -0.5) LCB -159.58c P  7.41% WF   6.0 PSV       3 N       2  --  R17 Q17
+R14 : T  -8.16c W  -7.49c S  -0.10c ( -0.5 L  -0.4) LCB  -82.38c P  6.20% WF   9.1 PSV       1 N       3  --  R14 Q4 D16
+
+2025-05-14 16:48:51+0900: = R4
+2025-05-14 16:48:51+0900: Controller: play B 2025-05-14 16:48:45+0900: Running with following config:
+2025-05-14 16:48:51+0900: ? Expected two arguments for play but got 'B 2025-05-14 16:48:45+0900: Running with following config:'
+2025-05-14 16:48:51+0900: Controller: humanSLChosenMoveIgnorePass = true
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: humanSLChosenMovePiklLambda = 100000000
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: humanSLChosenMoveProp = 1.0
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: humanSLProfile = rank_3d
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: includeMovesOwnership = false
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: includeOwnership = false
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: includePV = false
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: includePolicy = true
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: includeScoreMean = false
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: includeScoreStdev = false
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: includeUtility = false
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: lagBuffer = 1.0
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: logAllGTPCommunication = true
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: logDir = logs_humansl
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: logSearchInfo = true
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: logToStderr = true
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: maxVisits = 40
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: numSearchThreads = 1
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: rules = japanese
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:45+0900: GTP Engine starting...
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:45+0900: KataGo v1.15.3
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:45+0900: Using Japanese rules initially, unless GTP/GUI overrides this
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:45+0900: Using 1 CPU thread(s) for search
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:45+0900: nnRandSeed0 = 3560258376201417929
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:45+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:45+0900: Initializing neural net buffer to be size 19 * 19 exactly
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:47+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:47+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:47+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:49+0900: Loaded neural net with nnXLen 19 nnYLen 19
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:49+0900: nnRandSeed0 = 7249121874458474171
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:49+0900: After dedups: nnModelFile0 = ../../models/b18c384nbt-humanv0.bin.gz useFP16 auto useNHWC auto
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:49+0900: Initializing neural net buffer to be size 19 * 19 exactly
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Cuda backend thread 0: Model name: b18c384nbt-humanv0
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Loaded human SL net with nnXLen 19 nnYLen 19
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Initializing board with boardXSize 19 boardYSize 19
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: --------------
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from human5k_pure.cfg
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: WARNING: Unused key 'includeMovesOwnership' in human5k_pure.cfg
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: WARNING: Unused key 'includeOwnership' in human5k_pure.cfg
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: WARNING: Unused key 'includePV' in human5k_pure.cfg
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: WARNING: Unused key 'includePolicy' in human5k_pure.cfg
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: WARNING: Unused key 'includeScoreMean' in human5k_pure.cfg
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: WARNING: Unused key 'includeScoreStdev' in human5k_pure.cfg
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: WARNING: Unused key 'includeUtility' in human5k_pure.cfg
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: --------------
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: --------------
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from human5k_pure.cfg
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: WARNING: Unused key 'includeMovesOwnership' in human5k_pure.cfg
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: WARNING: Unused key 'includeOwnership' in human5k_pure.cfg
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: WARNING: Unused key 'includePV' in human5k_pure.cfg
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: WARNING: Unused key 'includePolicy' in human5k_pure.cfg
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: WARNING: Unused key 'includeScoreMean' in human5k_pure.cfg
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: WARNING: Unused key 'includeScoreStdev' in human5k_pure.cfg
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: WARNING: Unused key 'includeUtility' in human5k_pure.cfg
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: --------------
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Loaded config human5k_pure.cfg
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Loaded model ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Loaded human SL model ../../models/b18c384nbt-humanv0.bin.gz
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Human SL model name: b18c384nbt-humanv0
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: GTP ready, beginning main protocol loop
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Controller: boardsize 19
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: =
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: genmove W
+2025-05-14 16:48:51+0900: MoveNum: 3 HASH: D708DE31F95B10C3412836EB94D8B332
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . .
+16 . . . @ . . . . . . . . . . . O2. . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X1. . . . . . . . . . . . X3. .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Time taken: 0.308077
+Root visits: 40
+New playouts: 37
+NN rows: 38
+NN batches: 38
+NN avg batch size: 1
+PV: D16 C6 P3 Q5 M3 C17 D17 C16 C14
+Tree:
+: T   6.36c W   6.03c S   0.16c ( +0.5 L  +0.4) N      40  --  D16 C6 P3 Q5 M3 C17 D17
+---White(^)---
+D16 : T   6.78c W   6.28c S   0.20c ( +0.5 L  +0.4) LCB    4.94c P 78.12% WF 113.5 PSV      65 N      35  --  D16 C6 P3 Q5 M3 C17 D17 C16
+C16 : T   2.88c W   4.30c S  -0.16c ( +0.2 L  +0.2) LCB -146.22c P  9.92% WF   6.3 PSV      52 N       2  --  C16 R17
+D17 : T   3.83c W   4.66c S  -0.08c ( +0.3 L  +0.2) LCB -145.44c P  4.80% WF   6.4 PSV       5 N       2  --  D17 R17
+
+2025-05-14 16:48:51+0900: = D16
+2025-05-14 16:48:51+0900: Controller: play W 2025-05-14 16:48:50+0900: =
+2025-05-14 16:48:51+0900: ? Expected two arguments for play but got 'W 2025-05-14 16:48:50+0900: ='
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Controller: clear_board
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: =
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: genmove B
+2025-05-14 16:48:51+0900: MoveNum: 4 HASH: 6B3275FA2CECDE7EFE556BED86B0CCCB
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . .
+16 . . . O3. . . . . . . . . . . O1. . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . @ . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X . . . . . . . . . . . . X2. .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Time taken: 0.0544036
+Root visits: 40
+New playouts: 5
+NN rows: 6
+NN batches: 6
+NN avg batch size: 1
+PV: R14
+Tree:
+: T  -6.62c W  -6.36c S  -0.16c ( -0.5 L  -0.4) N      40  --  R14
+---Black(^)---
+R14 : T  -7.70c W  -7.58c S  -0.12c ( -0.5 L  -0.4) LCB -357.70c P  3.51% WF   3.3 PSV      96 N       1  --  R14
+R17 : T  -9.24c W  -7.44c S  -0.12c ( -0.5 L  -0.3) LCB -158.87c P  6.87% WF   6.6 PSV       9 N       2  --  R17 R16
+C17 : T  -7.23c W  -6.86c S  -0.10c ( -0.5 L  -0.4) LCB  -50.10c P  7.12% WF  13.2 PSV       6 N       4  --  C17 C16 D17 E16
+C6  : T  -6.34c W  -6.18c S  -0.17c ( -0.5 L  -0.4) LCB   -8.25c P 56.43% WF 102.7 PSV       6 N      32  --  C6 P3 Q5 M3 R17 R16 Q17 P16
+
+2025-05-14 16:48:51+0900: = R14
+2025-05-14 16:48:51+0900: Controller: play B 2025-05-14 16:48:50+0900: =
+2025-05-14 16:48:51+0900: ? Expected two arguments for play but got 'B 2025-05-14 16:48:50+0900: ='
+2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Controller: play B D4
+2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:51+0900: Controller: =
+2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:51+0900: Controller: genmove W
+2025-05-14 16:48:52+0900: MoveNum: 5 HASH: DD192E1E9363BE420A2D369BBA96AE48
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . @ . . . . .
+16 . . . O2. . . . . . . . . . . O . . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . X3. .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X . . . . . . . . . . . . X1. .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Time taken: 0.322194
+Root visits: 40
+New playouts: 39
+NN rows: 40
+NN batches: 40
+NN avg batch size: 1
+PV: O17
+Tree:
+: T   8.76c W   8.23c S   0.25c ( +0.6 L  +0.4) N      40  --  O17
+---White(^)---
+P3  : T   7.08c W   7.46c S   0.27c ( +0.6 L  +0.4) LCB  -66.93c P  8.18% WF  10.0 PSV      93 N       3  --  P3 Q5 C3
+C6  : T   5.97c W   6.01c S   0.10c ( +0.4 L  +0.3) LCB -142.96c P  6.95% WF   6.6 PSV      11 N       2  --  C6 F4
+R15 : T   4.79c W   4.94c S  -0.15c ( +0.2 L  +0.3) LCB -345.21c P  4.04% WF   3.1 PSV       6 N       1  --  R15
+C3  : T   9.35c W   8.66c S   0.27c ( +0.6 L  +0.4) LCB    7.13c P 57.61% WF 104.3 PSV       5 N      32  --  C3 D3 C4 D5 C5 C6 B6 O17
+F3  : T   5.78c W   5.56c S   0.22c ( +0.5 L  +0.5) LCB -344.22c P  4.09% WF   3.4 PSV       2 N       1  --  F3
+
+2025-05-14 16:48:52+0900: = O17
+2025-05-14 16:48:52+0900: Controller: play W 2025-05-14 16:48:50+0900: =
+2025-05-14 16:48:52+0900: ? Expected two arguments for play but got 'W 2025-05-14 16:48:50+0900: ='
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:50+0900: Controller: play W Q16
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: =
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: genmove B
+2025-05-14 16:48:52+0900: MoveNum: 6 HASH: 6F5C24E44C7B59580C7ADA1610E59CF0
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . O3. . . . .
+16 . . . O1. . . . . . . . . . . O . . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . X2. .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . @ . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X . . . . . . . . . . . . X . .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Time taken: 0.314949
+Root visits: 40
+New playouts: 40
+NN rows: 39
+NN batches: 39
+NN avg batch size: 1
+PV: Q10
+Tree:
+: T  -4.88c W  -4.89c S   0.05c ( -0.3 L  -0.2) N      40  --  Q10
+---Black(^)---
+R16 : T  -6.85c W  -6.11c S  -0.10c ( -0.4 L  -0.3) LCB  -49.99c P 12.92% WF  11.5 PSV      57 N       4  --  R16 R17 S17 R15
+C14 : T  -7.00c W  -6.83c S  -0.18c ( -0.5 L  -0.3) LCB -357.00c P  4.09% WF   3.3 PSV      32 N       1  --  C14
+C17 : T  -4.48c W  -4.58c S   0.08c ( -0.2 L  -0.2) LCB   -6.14c P 51.63% WF 104.0 PSV      21 N      33  --  C17 D17 C16 D15 B14 C3 C4 D3
+P4  : T  -6.66c W  -6.50c S  -0.15c ( -0.4 L  -0.3) LCB -356.66c P  5.40% WF   3.3 PSV      11 N       1  --  P4
+
+2025-05-14 16:48:52+0900: = Q10
+2025-05-14 16:48:52+0900: Controller: play B 2025-05-14 16:48:50+0900: =
+2025-05-14 16:48:52+0900: ? Expected two arguments for play but got 'B 2025-05-14 16:48:50+0900: ='
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:50+0900: Controller: genmove B
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: MoveNum: 2 HASH: EB5B48764F3CF87F19236A45508C4ACB
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: A B C D E F G H J K L M N O P Q R S T
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 19 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?19 unknown command
+2025-05-14 16:48:52+0900: Controller: 18 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?18 unknown command
+2025-05-14 16:48:52+0900: Controller: 17 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?17 unknown command
+2025-05-14 16:48:52+0900: Controller: 16 . . . . . . . . . . . . . . . O2. . .
+2025-05-14 16:48:52+0900: ?16 unknown command
+2025-05-14 16:48:52+0900: Controller: 15 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?15 unknown command
+2025-05-14 16:48:52+0900: Controller: 14 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?14 unknown command
+2025-05-14 16:48:52+0900: Controller: 13 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?13 unknown command
+2025-05-14 16:48:52+0900: Controller: 12 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?12 unknown command
+2025-05-14 16:48:52+0900: Controller: 11 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?11 unknown command
+2025-05-14 16:48:52+0900: Controller: 10 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?10 unknown command
+2025-05-14 16:48:52+0900: Controller: 9 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?9 unknown command
+2025-05-14 16:48:52+0900: Controller: 8 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?8 unknown command
+2025-05-14 16:48:52+0900: Controller: 7 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?7 unknown command
+2025-05-14 16:48:52+0900: Controller: 6 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?6 unknown command
+2025-05-14 16:48:52+0900: Controller: 5 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?5 unknown command
+2025-05-14 16:48:52+0900: Controller: 4 . . . X1. . . . . . . . . . . . @ . .
+2025-05-14 16:48:52+0900: ?4 unknown command
+2025-05-14 16:48:52+0900: Controller: 3 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?3 unknown command
+2025-05-14 16:48:52+0900: Controller: 2 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?2 unknown command
+2025-05-14 16:48:52+0900: Controller: 1 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?1 unknown command
+2025-05-14 16:48:52+0900: Controller: koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: Time taken: 0.585106
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: Root visits: 40
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: New playouts: 40
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: NN rows: 40
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: NN batches: 40
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: NN avg batch size: 1
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: PV: R4 D16 C6
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: Tree:
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: : T  -5.90c W  -5.86c S  -0.03c ( -0.4 L  -0.4) N      40  --  R4 D16 C6
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: ---Black(^)---
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: R4  : T  -3.52c W  -4.13c S  -0.12c ( -0.5 L  -0.4) LCB  -77.36c P  3.00% WF  10.3 PSV      68 N       3  --  R4 D16 C6
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: Q4  : T  -5.60c W  -5.61c S  -0.00c ( -0.4 L  -0.3) LCB   -7.25c P 26.15% WF 101.9 PSV      50 N      31  --  Q4 D16 C14 R3 R4 Q3 P4 O2
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: R17 : T -10.37c W  -9.54c S  -0.20c ( -0.5 L  -0.5) LCB -159.58c P  7.41% WF   6.0 PSV       3 N       2  --  R17 Q17
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: R14 : T  -8.16c W  -7.49c S  -0.10c ( -0.5 L  -0.4) LCB  -82.38c P  6.20% WF   9.1 PSV       1 N       3  --  R14 Q4 D16
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: = R4
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: genmove W
+2025-05-14 16:48:52+0900: MoveNum: 7 HASH: 47BC56D024718B937960914F07B6DBE4
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . O2. . . . .
+16 . . . O . . . . . . . . . . . O . . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . X1. .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . X3. . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X . . . . . . . . . . . . X . .
+ 3 . . . . . . . . . . . . . @ . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Time taken: 0.29343
+Root visits: 40
+New playouts: 40
+NN rows: 40
+NN batches: 40
+NN avg batch size: 1
+PV: O3
+Tree:
+: T  12.03c W  11.41c S   0.36c ( +0.8 L  +0.6) N      40  --  O3
+---White(^)---
+P4  : T  12.73c W  12.21c S   0.44c ( +0.9 L  +0.6) LCB    9.81c P 43.58% WF  70.8 PSV      45 N      26  --  P4 P3 O3 Q3 O4 Q6 K4 C17
+P3  : T   9.96c W   9.39c S   0.18c ( +0.7 L  +0.6) LCB  -63.91c P 13.36% WF   8.9 PSV      27 N       3  --  P3 M3
+C6  : T   6.97c W   7.03c S  -0.07c ( +0.4 L  +0.5) LCB -343.03c P  6.04% WF   3.0 PSV      21 N       1  --  C6
+C3  : T  11.55c W  10.57c S   0.28c ( +0.8 L  +0.6) LCB    2.70c P 28.34% WF  27.0 PSV      15 N       9  --  C3 D3 C4 D5 C6 C2
+
+2025-05-14 16:48:52+0900: = O3
+2025-05-14 16:48:52+0900: Controller: play W 2025-05-14 16:48:51+0900: = R4
+2025-05-14 16:48:52+0900: ? Expected two arguments for play but got 'W 2025-05-14 16:48:51+0900: = R4'
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: play B 2025-05-14 16:48:45+0900: Running with following config:
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? Expected two arguments for play but got 'B 2025-05-14 16:48:45+0900: Running with following config:'
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? Expected two arguments for play but got 'B 2025-05-14 16:48:45+0900: Running with following config:'
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: humanSLChosenMoveIgnorePass = true
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: humanSLChosenMovePiklLambda = 100000000
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: humanSLChosenMoveProp = 1.0
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: humanSLProfile = rank_3d
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: includeMovesOwnership = false
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: includeOwnership = false
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: includePV = false
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: includePolicy = true
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: includeScoreMean = false
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: includeScoreStdev = false
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: includeUtility = false
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: lagBuffer = 1.0
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: logAllGTPCommunication = true
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: logDir = logs_humansl
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: logSearchInfo = true
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: logToStderr = true
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: maxVisits = 40
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: numSearchThreads = 1
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: rules = japanese
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:45+0900: GTP Engine starting...
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:45+0900: KataGo v1.15.3
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:45+0900: Using Japanese rules initially, unless GTP/GUI overrides this
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:45+0900: Using 1 CPU thread(s) for search
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:45+0900: nnRandSeed0 = 3560258376201417929
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:45+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:45+0900: Initializing neural net buffer to be size 19 * 19 exactly
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:47+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:47+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:47+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:49+0900: Loaded neural net with nnXLen 19 nnYLen 19
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:49+0900: nnRandSeed0 = 7249121874458474171
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:49+0900: After dedups: nnModelFile0 = ../../models/b18c384nbt-humanv0.bin.gz useFP16 auto useNHWC auto
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:49+0900: Initializing neural net buffer to be size 19 * 19 exactly
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Cuda backend thread 0: Model name: b18c384nbt-humanv0
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Loaded human SL net with nnXLen 19 nnYLen 19
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Initializing board with boardXSize 19 boardYSize 19
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: --------------
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: WARNING: Unused key 'includeMovesOwnership' in human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: WARNING: Unused key 'includeOwnership' in human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: WARNING: Unused key 'includePV' in human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: WARNING: Unused key 'includePolicy' in human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: WARNING: Unused key 'includeScoreMean' in human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: WARNING: Unused key 'includeScoreStdev' in human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: WARNING: Unused key 'includeUtility' in human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: --------------
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: --------------
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: WARNING: Unused key 'includeMovesOwnership' in human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: WARNING: Unused key 'includeOwnership' in human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: WARNING: Unused key 'includePV' in human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: WARNING: Unused key 'includePolicy' in human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: WARNING: Unused key 'includeScoreMean' in human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: WARNING: Unused key 'includeScoreStdev' in human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: WARNING: Unused key 'includeUtility' in human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: --------------
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Loaded config human5k_pure.cfg
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Loaded model ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Loaded human SL model ../../models/b18c384nbt-humanv0.bin.gz
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Human SL model name: b18c384nbt-humanv0
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: GTP ready, beginning main protocol loop
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Controller: boardsize 19
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: =
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: genmove W
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: MoveNum: 3 HASH: D708DE31F95B10C3412836EB94D8B332
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: A B C D E F G H J K L M N O P Q R S T
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 19 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?19 unknown command
+2025-05-14 16:48:52+0900: Controller: 18 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?18 unknown command
+2025-05-14 16:48:52+0900: Controller: 17 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?17 unknown command
+2025-05-14 16:48:52+0900: Controller: 16 . . . @ . . . . . . . . . . . O2. . .
+2025-05-14 16:48:52+0900: ?16 unknown command
+2025-05-14 16:48:52+0900: Controller: 15 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?15 unknown command
+2025-05-14 16:48:52+0900: Controller: 14 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?14 unknown command
+2025-05-14 16:48:52+0900: Controller: 13 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?13 unknown command
+2025-05-14 16:48:52+0900: Controller: 12 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?12 unknown command
+2025-05-14 16:48:52+0900: Controller: 11 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?11 unknown command
+2025-05-14 16:48:52+0900: Controller: 10 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?10 unknown command
+2025-05-14 16:48:52+0900: Controller: 9 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?9 unknown command
+2025-05-14 16:48:52+0900: Controller: 8 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?8 unknown command
+2025-05-14 16:48:52+0900: Controller: 7 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?7 unknown command
+2025-05-14 16:48:52+0900: Controller: 6 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?6 unknown command
+2025-05-14 16:48:52+0900: Controller: 5 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?5 unknown command
+2025-05-14 16:48:52+0900: Controller: 4 . . . X1. . . . . . . . . . . . X3. .
+2025-05-14 16:48:52+0900: ?4 unknown command
+2025-05-14 16:48:52+0900: Controller: 3 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?3 unknown command
+2025-05-14 16:48:52+0900: Controller: 2 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?2 unknown command
+2025-05-14 16:48:52+0900: Controller: 1 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?1 unknown command
+2025-05-14 16:48:52+0900: Controller: koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: Time taken: 0.308077
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: Root visits: 40
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: New playouts: 37
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: NN rows: 38
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: NN batches: 38
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: NN avg batch size: 1
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: PV: D16 C6 P3 Q5 M3 C17 D17 C16 C14
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: Tree:
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: : T   6.36c W   6.03c S   0.16c ( +0.5 L  +0.4) N      40  --  D16 C6 P3 Q5 M3 C17 D17
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: ---White(^)---
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: D16 : T   6.78c W   6.28c S   0.20c ( +0.5 L  +0.4) LCB    4.94c P 78.12% WF 113.5 PSV      65 N      35  --  D16 C6 P3 Q5 M3 C17 D17 C16
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: C16 : T   2.88c W   4.30c S  -0.16c ( +0.2 L  +0.2) LCB -146.22c P  9.92% WF   6.3 PSV      52 N       2  --  C16 R17
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: D17 : T   3.83c W   4.66c S  -0.08c ( +0.3 L  +0.2) LCB -145.44c P  4.80% WF   6.4 PSV       5 N       2  --  D17 R17
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: = D16
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: genmove B
+2025-05-14 16:48:52+0900: MoveNum: 8 HASH: B416722F954599D34C90A78888688914
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . O1. . . . .
+16 . . . O . . . . . . . . . . . O . . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . X . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . X2. . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X . . . . . . . . . . @ . X . .
+ 3 . . . . . . . . . . . . . O3. . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Time taken: 0.252397
+Root visits: 40
+New playouts: 40
+NN rows: 40
+NN batches: 40
+NN avg batch size: 1
+PV: P4 O4 P3 O5 C17
+Tree:
+: T  -4.36c W  -4.66c S  -0.07c ( -0.3 L  -0.3) N      40  --  P4 O4 P3 O5 C17
+---Black(^)---
+P4  : T  -8.10c W  -7.10c S  -0.32c ( -0.5 L  -0.4) LCB  -22.82c P 43.65% WF  19.6 PSV      65 N       7  --  P4 O4 P3 O5 C17
+Q3  : T  -2.91c W  -3.76c S  -0.00c ( -0.2 L  -0.3) LCB   -5.63c P 25.59% WF  58.6 PSV      36 N      21  --  Q3 O5 C17 C16
+C17 : T  -4.77c W  -4.89c S  -0.02c ( -0.2 L  -0.2) LCB  -12.22c P 20.78% WF  29.0 PSV       1 N      11  --  C17 D17 C16 C14
+
+2025-05-14 16:48:52+0900: = P4
+2025-05-14 16:48:52+0900: Controller: play B 2025-05-14 16:48:51+0900: = D16
+2025-05-14 16:48:52+0900: ? Expected two arguments for play but got 'B 2025-05-14 16:48:51+0900: = D16'
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: play W 2025-05-14 16:48:50+0900: =
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? Expected two arguments for play but got 'W 2025-05-14 16:48:50+0900: ='
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? Expected two arguments for play but got 'W 2025-05-14 16:48:50+0900: ='
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: 2025-05-14 16:48:50+0900: Controller: clear_board
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ?2025 unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: =
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: ? unknown command
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: ? unknown command
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: Controller: genmove B
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: 2025-05-14 16:48:51+0900: MoveNum: 4 HASH: 6B3275FA2CECDE7EFE556BED86B0CCCB
+2025-05-14 16:48:52+0900: ?2025 unknown command
+2025-05-14 16:48:52+0900: Controller: A B C D E F G H J K L M N O P Q R S T
+2025-05-14 16:48:52+0900: ? unknown command
+2025-05-14 16:48:52+0900: Controller: 19 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?19 unknown command
+2025-05-14 16:48:52+0900: Controller: 18 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?18 unknown command
+2025-05-14 16:48:52+0900: Controller: 17 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?17 unknown command
+2025-05-14 16:48:52+0900: Controller: 16 . . . O3. . . . . . . . . . . O1. . .
+2025-05-14 16:48:52+0900: ?16 unknown command
+2025-05-14 16:48:52+0900: Controller: 15 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?15 unknown command
+2025-05-14 16:48:52+0900: Controller: 14 . . . . . . . . . . . . . . . . @ . .
+2025-05-14 16:48:52+0900: ?14 unknown command
+2025-05-14 16:48:52+0900: Controller: 13 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?13 unknown command
+2025-05-14 16:48:52+0900: Controller: 12 . . . . . . . . . . . . . . . . . . .
+2025-05-14 16:48:52+0900: ?12 unknown command

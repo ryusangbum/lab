@@ -1,0 +1,227 @@
+2025-06-11 20:13:38+0900: Running with following config:
+analysisIgnorePreRootHistory = false
+chosenMovePrune = 0
+chosenMoveSubtract = 0
+chosenMoveTemperature = 1.0
+chosenMoveTemperatureEarly = 1.0
+chosenMoveTemperatureOnlyBelowProb = 0.0
+ignorePreRootHistory = false
+logDir = analysis_logs
+logSearchInfo = true
+logToStderr = true
+maxVisits = 2000
+nnCacheSizePowerOfTwo = 17
+nnMaxBatchSize = 8
+nnMutexPoolSizePowerOfTwo = 14
+nnRandomize = false
+numAnalysisThreads = 1
+numSearchThreads = 4
+reportAnalysisWinratesAs = BLACK
+rootNumSymmetriesToSample = 1
+rules = japanese
+subtreeValueBiasFactor = 0.0
+useLcbForSelection = false
+useNoisePruning = false
+useUncertainty = false
+
+2025-06-11 20:13:38+0900: Analysis Engine starting...
+2025-06-11 20:13:38+0900: KataGo v1.15.3
+2025-06-11 20:13:38+0900: nnRandSeed0 = 7869657746008044125
+2025-06-11 20:13:38+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-06-11 20:13:38+0900: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2025-06-11 20:13:41+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-06-11 20:13:41+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-06-11 20:13:41+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-06-11 20:13:42+0900: --------------
+2025-06-11 20:13:42+0900: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from analysis.cfg
+2025-06-11 20:13:42+0900: WARNING: Unused key 'analysisIgnorePreRootHistory' in analysis.cfg
+2025-06-11 20:13:42+0900: WARNING: Unused key 'rules' in analysis.cfg
+2025-06-11 20:13:42+0900: --------------
+2025-06-11 20:13:42+0900: Loaded config analysis.cfg
+2025-06-11 20:13:42+0900: Loaded model ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-06-11 20:13:42+0900: Analyzing up to 1 positions at a time in parallel
+2025-06-11 20:13:42+0900: Started, ready to begin handling requests
+2025-06-11 20:13:48+0900: MoveNum: 2 HASH: EB5B48764F3CF87F19236A45508C4ACB
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . .
+16 . . . . . . . . . . . . . . . O2. . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X1. . . . . . . . . . . . . . .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Root visits: 1003
+New playouts: 1003
+NN rows: 964
+NN batches: 483
+NN avg batch size: 1.99586
+PV: Q4 D16 C14 R3 R4 Q3 P4 O2 F17 F16 G16 F15 D17 C17 E17 C16 C11 D12 C12 D14 J17 D13 D9
+Tree:
+: T  -7.13c W  -6.99c S  -0.14c ( -0.5 L  -0.4) N    1003  --  Q4 D16 C14 R3 R4 Q3 P4
+---Black(^)---
+Q4  : T  -5.74c W  -5.73c S  -0.01c ( -0.3 L  -0.3) LCB   -6.50c P 27.60% WF 260.6 PSV     258 N     258  --  Q4 D16 C14 R3 R4 Q3 P4 O2
+R17 : T  -6.87c W  -6.76c S  -0.11c ( -0.4 L  -0.4) LCB   -7.85c P  8.02% WF 126.0 PSV      37 N     126  --  R17 Q17 R16 Q15 R14 Q4 D16 C17
+R14 : T  -6.30c W  -6.28c S  -0.02c ( -0.4 L  -0.3) LCB   -7.38c P  5.73% WF 129.5 PSV      35 N     129  --  R14 Q4 D16 R15 Q14 O16 Q10 C3
+R4  : T  -5.85c W  -5.77c S  -0.09c ( -0.4 L  -0.4) LCB   -6.86c P  3.12% WF 153.2 PSV      26 N     152  --  R4 D16 C6 P3 Q5 M3 C17 D17
+Q3  : T  -8.14c W  -7.92c S  -0.21c ( -0.5 L  -0.4) LCB   -9.49c P  1.77% WF  79.3 PSV       5 N      80  --  Q3 D16 C17 C16 D17 E16 F18 C3
+F3  : T  -7.78c W  -7.49c S  -0.30c ( -0.6 L  -0.5) LCB   -9.03c P  1.55% WF  71.5 PSV       5 N      72  --  F3 D16 R4 P3 Q5 M3 R17 R16
+Q5  : T  -9.14c W  -8.86c S  -0.27c ( -0.6 L  -0.5) LCB  -11.47c P  1.54% WF  47.3 PSV       3 N      48  --  Q5 D16 Q3 C3 D3 C4 D5 C6
+P4  : T  -9.44c W  -9.14c S  -0.30c ( -0.6 L  -0.5) LCB  -11.62c P  0.94% WF  32.5 PSV       2 N      33  --  P4 D16 R4 C3 D3 C4 D5 C6
+F4  : T -10.39c W  -9.96c S  -0.42c ( -0.7 L  -0.6) LCB  -12.51c P  0.70% WF  28.4 PSV       1 N      29  --  F4 D16 R4 P3 Q5 M3 R17 R16
+R3  : T -10.06c W  -9.69c S  -0.37c ( -0.7 L  -0.5) LCB  -12.73c P  0.49% WF  20.7 PSV       0 N      21  --  R3 D16 C6 R14 C17 D17
+
+2025-06-11 20:14:08+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 1: syntax error while parsing value - invalid literal; last read: 'q' - could not parse input line as json request: query = {"}
+2025-06-11 20:14:08+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 5: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"id\": \"final_eval\","}
+2025-06-11 20:14:08+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 16: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"initialStones\": [],"}
+2025-06-11 20:14:08+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 8: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"moves\": input_moves,"}
+2025-06-11 20:14:08+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 8: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"rules\": \"japanese\","}
+2025-06-11 20:14:08+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 7: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"komi\": 6.5,"}
+2025-06-11 20:14:08+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 13: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"boardXSize\": 19,"}
+2025-06-11 20:14:08+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 13: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"boardYSize\": 19,"}
+2025-06-11 20:14:08+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 15: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"analyzeTurns\": [len(input_moves)],"}
+2025-06-11 20:14:08+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 12: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"maxVisits\": 1000,"}
+2025-06-11 20:14:08+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 16: syntax error while parsing value - unexpected ':'; expected end of input - could not parse input line as json request: \"includePolicy\": True"}
+2025-06-11 20:14:31+0900: Error: {"error":"[json.exception.parse_error.101] parse error at line 1, column 1: syntax error while parsing value - unexpected '}'; expected '[', '{', or a literal - could not parse input line as json request: }{\"id\": \"final_eval\", \"initialStones\": [], \"moves\": [[\"B\", \"D4\"], [\"W\", \"Q16\"]], \"rules\": \"japanese\", \"komi\": 6.5, \"boardXSize\": 19, \"boardYSize\": 19, \"analyzeTurns\": [2], \"maxVisits\": 1000, \"includePolicy\": true}"}
+2025-06-11 20:14:35+0900: MoveNum: 2 HASH: EB5B48764F3CF87F19236A45508C4ACB
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . .
+16 . . . . . . . . . . . . . . . O2. . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X1. . . . . . . . . . . . . . .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Root visits: 1003
+New playouts: 1003
+NN rows: 1028
+NN batches: 517
+NN avg batch size: 1.98839
+PV: Q4 D16 C14 R3 R4 Q3 P4 O2 F17 F16 G16 F15 D17 C17 E17 C16 C11 D12 C12 D14 J17 D13 D9
+Tree:
+: T  -7.17c W  -7.02c S  -0.14c ( -0.5 L  -0.4) N    1003  --  Q4 D16 C14 R3 R4 Q3 P4
+---Black(^)---
+Q4  : T  -5.75c W  -5.74c S  -0.01c ( -0.3 L  -0.3) LCB   -6.52c P 27.60% WF 251.6 PSV     249 N     249  --  Q4 D16 C14 R3 R4 Q3 P4 O2
+R17 : T  -6.87c W  -6.76c S  -0.11c ( -0.4 L  -0.4) LCB   -7.81c P  8.02% WF 134.1 PSV      37 N     134  --  R17 Q17 R16 Q15 R14 Q4 D16 C17
+R14 : T  -6.36c W  -6.32c S  -0.03c ( -0.4 L  -0.3) LCB   -7.35c P  5.73% WF 147.6 PSV      34 N     147  --  R14 Q4 D16 R15 Q14 O16 Q10 C3
+R4  : T  -5.86c W  -5.77c S  -0.09c ( -0.4 L  -0.4) LCB   -6.91c P  3.12% WF 126.0 PSV      25 N     125  --  R4 D16 C6 P3 Q5 M3 R17 R16
+F3  : T  -7.73c W  -7.44c S  -0.28c ( -0.6 L  -0.5) LCB   -8.88c P  1.55% WF  82.5 PSV       5 N      83  --  F3 D16 R4 P3 Q5 M3 R17 R16
+Q3  : T  -8.19c W  -7.96c S  -0.22c ( -0.5 L  -0.4) LCB   -9.61c P  1.77% WF  71.4 PSV       5 N      72  --  Q3 D16 C17 C16 D17 E16 F18 C3
+Q5  : T  -9.23c W  -8.95c S  -0.27c ( -0.6 L  -0.5) LCB  -11.29c P  1.54% WF  59.1 PSV       3 N      60  --  Q5 D16 Q3 C3 D3 C4 D5 C6
+P4  : T  -9.30c W  -9.02c S  -0.28c ( -0.6 L  -0.5) LCB  -11.16c P  0.94% WF  39.4 PSV       2 N      40  --  P4 D16 R4 C3 D3 C4 D5 C6
+F4  : T -10.22c W  -9.79c S  -0.42c ( -0.7 L  -0.6) LCB  -12.56c P  0.70% WF  24.6 PSV       1 N      25  --  F4 D16 R4 P3 Q5 M3 R17
+G3  : T -10.46c W  -9.99c S  -0.46c ( -0.8 L  -0.6) LCB  -13.79c P  0.41% WF  16.7 PSV       0 N      17  --  G3 Q4 D17 C15 E16 C12 R17
+
+2025-06-11 20:14:39+0900: MoveNum: 2 HASH: EB5B48764F3CF87F19236A45508C4ACB
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . .
+16 . . . . . . . . . . . . . . . O2. . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X1. . . . . . . . . . . . . . .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Root visits: 1003
+New playouts: 1003
+NN rows: 1055
+NN batches: 531
+NN avg batch size: 1.98682
+PV: Q4 D16 C14 R3 R4 Q3 P4 O2 F17 F16 G16 F15 D17 C17 E17 C16 C11 D12 C12 D14 J17 D13 D9
+Tree:
+: T  -7.19c W  -7.05c S  -0.15c ( -0.5 L  -0.4) N    1003  --  Q4 D16 C14 R3 R4 Q3 P4
+---Black(^)---
+Q4  : T  -5.72c W  -5.71c S  -0.01c ( -0.3 L  -0.3) LCB   -6.48c P 27.60% WF 262.9 PSV     260 N     260  --  Q4 D16 C14 R3 R4 Q3 P4 O2
+R17 : T  -6.78c W  -6.67c S  -0.11c ( -0.4 L  -0.4) LCB   -7.80c P  8.02% WF 119.1 PSV      38 N     119  --  R17 Q17 R16 Q15 R14 Q4 D16 C17
+R14 : T  -6.64c W  -6.60c S  -0.04c ( -0.4 L  -0.3) LCB   -7.84c P  5.73% WF 104.2 PSV      29 N     104  --  R14 Q4 D16 R15 Q14 O16 Q10 C3
+R4  : T  -5.78c W  -5.70c S  -0.08c ( -0.4 L  -0.4) LCB   -6.78c P  3.12% WF 150.3 PSV      27 N     149  --  R4 D16 C6 P3 Q5 M3 R17 R16
+F3  : T  -7.78c W  -7.50c S  -0.29c ( -0.6 L  -0.5) LCB   -8.91c P  1.55% WF  85.5 PSV       5 N      86  --  F3 D16 R4 P3 Q5 M3 R17 R16
+Q3  : T  -8.06c W  -7.85c S  -0.21c ( -0.5 L  -0.4) LCB   -9.37c P  1.77% WF  84.3 PSV       5 N      85  --  Q3 D16 C17 C16 D17 E16 F18 C3
+Q5  : T  -9.19c W  -8.91c S  -0.28c ( -0.6 L  -0.5) LCB  -11.48c P  1.54% WF  48.3 PSV       3 N      49  --  Q5 D16 Q3 C3 D3 C4 D5 C6
+P4  : T  -9.24c W  -8.97c S  -0.27c ( -0.6 L  -0.5) LCB  -11.08c P  0.94% WF  40.4 PSV       2 N      41  --  P4 D16 R4 C3 D3 C4 D5 C6
+F4  : T -10.46c W -10.04c S  -0.42c ( -0.7 L  -0.6) LCB  -12.53c P  0.70% WF  29.4 PSV       1 N      30  --  F4 D16 R4 P3 Q5 M3 R17 R16
+R3  : T -10.22c W  -9.85c S  -0.36c ( -0.7 L  -0.5) LCB  -12.95c P  0.49% WF  19.7 PSV       0 N      20  --  R3 D16 C6 R14 C17 D17
+
+2025-06-11 20:15:57+0900: MoveNum: 2 HASH: EB5B48764F3CF87F19236A45508C4ACB
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . .
+16 . . . . . . . . . . . . . . . O2. . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X1. . . . . . . . . . . . . . .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Root visits: 1003
+New playouts: 1003
+NN rows: 1077
+NN batches: 543
+NN avg batch size: 1.98343
+PV: Q4 D16 C14 R3 R4 Q3 P4 O2 F17 F16 G16 F15 D17 C17 E17 C16 C11 D12 C12 D14 J17 D13 D9
+Tree:
+: T  -7.25c W  -7.10c S  -0.15c ( -0.5 L  -0.4) N    1003  --  Q4 D16 C14 R3 R4 Q3 P4
+---Black(^)---
+Q4  : T  -5.73c W  -5.72c S  -0.01c ( -0.3 L  -0.3) LCB   -6.50c P 27.60% WF 250.8 PSV     248 N     248  --  Q4 D16 C14 R3 R4 Q3 P4 O2
+R17 : T  -6.86c W  -6.75c S  -0.11c ( -0.4 L  -0.4) LCB   -7.79c P  8.02% WF 136.1 PSV      36 N     136  --  R17 Q17 R16 Q15 R14 Q4 D16 C17
+R14 : T  -6.38c W  -6.34c S  -0.03c ( -0.4 L  -0.3) LCB   -7.38c P  5.73% WF 146.7 PSV      33 N     146  --  R14 Q4 D16 R15 Q14 O16 Q10 C3
+R4  : T  -5.85c W  -5.75c S  -0.10c ( -0.4 L  -0.4) LCB   -7.04c P  3.12% WF 103.8 PSV      25 N     103  --  R4 D16 C6 P3 Q5 M3 C17 D17
+F3  : T  -7.81c W  -7.53c S  -0.29c ( -0.6 L  -0.5) LCB   -8.94c P  1.55% WF  86.5 PSV       5 N      87  --  F3 D16 R4 P3 Q5 M3 R17 R16
+Q3  : T  -8.11c W  -7.90c S  -0.21c ( -0.5 L  -0.4) LCB   -9.51c P  1.77% WF  76.4 PSV       5 N      77  --  Q3 D16 C17 C16 D17 E16 F18 C3
+Q5  : T  -9.22c W  -8.94c S  -0.28c ( -0.6 L  -0.5) LCB  -11.29c P  1.54% WF  59.1 PSV       3 N      60  --  Q5 D16 Q3 C3 D3 C4 D5 C6
+P4  : T  -9.36c W  -9.07c S  -0.29c ( -0.6 L  -0.5) LCB  -11.33c P  0.94% WF  36.5 PSV       2 N      37  --  P4 D16 R4 C3 D3 C4 D5 C6
+F4  : T  -9.77c W  -9.39c S  -0.38c ( -0.7 L  -0.5) LCB  -12.60c P  0.70% WF  18.7 PSV       1 N      19  --  F4 D16 R4 P3 Q5 M3
+R3  : T  -9.94c W  -9.58c S  -0.36c ( -0.7 L  -0.5) LCB  -12.22c P  0.49% WF  23.6 PSV       0 N      24  --  R3 D16 C6 R14 C17 D17 C16
+

@@ -1,0 +1,109 @@
+2025-06-07 00:39:19+0900: Running with following config:
+analysisIgnorePreRootHistory = false
+chosenMovePrune = 0
+chosenMoveSubtract = 0
+chosenMoveTemperature = 1.0
+chosenMoveTemperatureEarly = 1.0
+chosenMoveTemperatureOnlyBelowProb = 0.0
+humanSLChosenMoveIgnorePass = true
+humanSLChosenMovePiklLambda = 100000000
+humanSLChosenMoveProp = 1.0
+humanSLOppExploreProbWeightful = 0.0
+humanSLOppExploreProbWeightless = 0.0
+humanSLPlaExploreProbWeightful = 0.0
+humanSLPlaExploreProbWeightless = 0.0
+humanSLProfile = rank_5k
+humanSLRootExploreProbWeightful = 0.0
+humanSLRootExploreProbWeightless = 0.0
+ignorePreRootHistory = false
+logDir = analysis_logs
+logSearchInfo = true
+logToStderr = true
+maxVisits = 1
+nnCacheSizePowerOfTwo = 17
+nnMaxBatchSize = 8
+nnMutexPoolSizePowerOfTwo = 14
+nnRandomize = false
+numAnalysisThreads = 1
+numSearchThreads = 4
+reportAnalysisWinratesAs = BLACK
+rootNumSymmetriesToSample = 1
+rules = japanese
+subtreeValueBiasFactor = 0.0
+useLcbForSelection = false
+useNoisePruning = false
+useUncertainty = false
+
+2025-06-07 00:39:19+0900: Analysis Engine starting...
+2025-06-07 00:39:19+0900: KataGo v1.15.3
+2025-06-07 00:39:19+0900: nnRandSeed0 = 9247382182893828131
+2025-06-07 00:39:19+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-06-07 00:39:19+0900: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2025-06-07 00:39:21+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-06-07 00:39:21+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-06-07 00:39:21+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-06-07 00:39:22+0900: nnRandSeed0 = 1205963009744043222
+2025-06-07 00:39:22+0900: After dedups: nnModelFile0 = ../../models/b18c384nbt-humanv0.bin.gz useFP16 auto useNHWC auto
+2025-06-07 00:39:22+0900: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2025-06-07 00:39:23+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-06-07 00:39:23+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-06-07 00:39:23+0900: Cuda backend thread 0: Model name: b18c384nbt-humanv0
+2025-06-07 00:39:24+0900: --------------
+2025-06-07 00:39:24+0900: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from human5k_pure.cfg
+2025-06-07 00:39:24+0900: WARNING: Unused key 'analysisIgnorePreRootHistory' in human5k_pure.cfg
+2025-06-07 00:39:24+0900: WARNING: Unused key 'rules' in human5k_pure.cfg
+2025-06-07 00:39:24+0900: --------------
+2025-06-07 00:39:24+0900: Loaded config human5k_pure.cfg
+2025-06-07 00:39:24+0900: Loaded model ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-06-07 00:39:24+0900: Analyzing up to 1 positions at a time in parallel
+2025-06-07 00:39:24+0900: Started, ready to begin handling requests
+2025-06-07 00:39:24+0900: MoveNum: 10 HASH: B44595520C2056DAA4A0576F926E9BE0
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . O . . . . . . . . . . . . . . .
+16 . . . . . . . . . . . . . . . O . . .
+15 . . O . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X . . . . . . . . . . X . X . .
+ 3 . . O3. . O1. X2. . X . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Root visits: 53
+New playouts: 53
+NN rows: 52
+NN batches: 28
+NN avg batch size: 1.85714
+PV: D3 C4 D5 D2 E2 C2 F2 C6 R14 Q10 Q8
+Tree:
+: T -10.24c W -10.05c S  -0.18c ( -0.7 L  -0.5) N      53  --  D3 C4 D5 D2 E2 C2 F2
+---Black(^)---
+D3  : T  -5.58c W  -5.75c S   0.17c ( -0.4 L  -0.3) LCB  -11.01c P 96.30% WF  37.7 PSV      37 N      37  --  D3 C4 D5 D2 E2 C2 F2 C6
+R17 : T -19.48c W -18.60c S  -0.88c ( -1.3 L  -0.9) LCB  -28.95c P  1.78% WF   8.6 PSV       0 N       9  --  R17 Q17 D3 C4 D5
+D16 : T -23.29c W -22.13c S  -1.16c ( -1.6 L  -1.2) LCB -373.29c P  0.23% WF   1.0 PSV       0 N       1  --  D16
+E17 : T -33.85c W -31.89c S  -1.96c ( -2.4 L  -1.7) LCB -383.85c P  0.08% WF   0.9 PSV       0 N       1  --  E17
+D18 : T -30.04c W -28.36c S  -1.67c ( -2.1 L  -1.6) LCB -380.04c P  0.27% WF   0.9 PSV       0 N       1  --  D18
+R16 : T -24.65c W -23.35c S  -1.30c ( -1.7 L  -1.2) LCB  -98.64c P  0.30% WF   2.8 PSV       0 N       3  --  R16 R17 D3
+
+2025-06-07 00:39:24+0900: ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-06-07 00:39:24+0900: NN rows: 52
+2025-06-07 00:39:24+0900: NN batches: 28
+2025-06-07 00:39:24+0900: NN avg batch size: 1.85714
+2025-06-07 00:39:24+0900: ../../models/b18c384nbt-humanv0.bin.gz
+2025-06-07 00:39:24+0900: NN rows: 4
+2025-06-07 00:39:24+0900: NN batches: 2
+2025-06-07 00:39:24+0900: NN avg batch size: 2
+2025-06-07 00:39:24+0900: GPU -1 finishing, processed 52 rows 28 batches
+2025-06-07 00:39:24+0900: GPU -1 finishing, processed 4 rows 2 batches
+2025-06-07 00:39:24+0900: All cleaned up, quitting

@@ -1,0 +1,1 @@
+{"id": "final_eval", "initialStones": [], "moves": [["B", "D4"], ["W", "Q16"]], "rules": "japanese", "komi": 6.5, "boardXSize": 19, "boardYSize": 19, "analyzeTurns": [2], "maxVisits": 1000, "includePolicy": true}

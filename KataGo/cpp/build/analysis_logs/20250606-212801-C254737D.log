@@ -1,0 +1,92 @@
+2025-06-06 21:28:01+0900: Running with following config:
+analysisIgnorePreRootHistory = false
+chosenMovePrune = 0
+chosenMoveSubtract = 0
+chosenMoveTemperature = 1.0
+chosenMoveTemperatureEarly = 1.0
+chosenMoveTemperatureOnlyBelowProb = 0.0
+ignorePreRootHistory = false
+logDir = analysis_logs
+logSearchInfo = true
+logToStderr = true
+maxVisits = 500
+nnCacheSizePowerOfTwo = 17
+nnMaxBatchSize = 8
+nnMutexPoolSizePowerOfTwo = 14
+nnRandomize = false
+numAnalysisThreads = 1
+numSearchThreads = 4
+reportAnalysisWinratesAs = BLACK
+rootNumSymmetriesToSample = 1
+rules = japanese
+subtreeValueBiasFactor = 0.0
+useLcbForSelection = false
+useNoisePruning = false
+useUncertainty = false
+
+2025-06-06 21:28:01+0900: Analysis Engine starting...
+2025-06-06 21:28:01+0900: KataGo v1.15.3
+2025-06-06 21:28:01+0900: nnRandSeed0 = 2991002876308208357
+2025-06-06 21:28:01+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-06-06 21:28:01+0900: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2025-06-06 21:28:03+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-06-06 21:28:03+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-06-06 21:28:03+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-06-06 21:28:04+0900: --------------
+2025-06-06 21:28:04+0900: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from analysis.cfg
+2025-06-06 21:28:04+0900: WARNING: Unused key 'analysisIgnorePreRootHistory' in analysis.cfg
+2025-06-06 21:28:04+0900: WARNING: Unused key 'rules' in analysis.cfg
+2025-06-06 21:28:04+0900: --------------
+2025-06-06 21:28:04+0900: Loaded config analysis.cfg
+2025-06-06 21:28:04+0900: Loaded model ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-06-06 21:28:04+0900: Analyzing up to 1 positions at a time in parallel
+2025-06-06 21:28:04+0900: Started, ready to begin handling requests
+2025-06-06 21:28:07+0900: MoveNum: 2 HASH: EB5B48764F3CF87F19236A45508C4ACB
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . .
+16 . . . . . . . . . . . . . . . O2. . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X1. . . . . . . . . . . . . . .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Root visits: 1003
+New playouts: 1003
+NN rows: 960
+NN batches: 481
+NN avg batch size: 1.99584
+PV: Q4 D16 C14 R3 R4 Q3 P4 O2 F17 F16 G16 F15 D17 C17 E17 C16 C11 D12 C12 D14 J17 D13 D9
+Tree:
+: T  -7.21c W  -7.07c S  -0.15c ( -0.5 L  -0.4) N    1003  --  Q4 D16 C14 R3 R4 Q3 P4
+---Black(^)---
+Q4  : T  -5.78c W  -5.77c S  -0.01c ( -0.4 L  -0.3) LCB   -6.57c P 27.60% WF 247.5 PSV     245 N     245  --  Q4 D16 C14 R3 R4 Q3 P4 O2
+R17 : T  -6.85c W  -6.73c S  -0.11c ( -0.4 L  -0.4) LCB   -7.81c P  8.02% WF 128.1 PSV      37 N     128  --  R17 Q17 R16 Q15 R14 Q4 D16 C17
+R14 : T  -6.37c W  -6.35c S  -0.03c ( -0.4 L  -0.3) LCB   -7.44c P  5.73% WF 128.5 PSV      34 N     128  --  R14 Q4 D16 R15 Q14 O16 Q10 C3
+R4  : T  -5.84c W  -5.75c S  -0.08c ( -0.4 L  -0.4) LCB   -6.83c P  3.12% WF 157.4 PSV      26 N     156  --  R4 D16 C6 P3 Q5 M3 R17 R16
+Q3  : T  -8.18c W  -7.96c S  -0.22c ( -0.5 L  -0.4) LCB   -9.62c P  1.77% WF  70.4 PSV       5 N      71  --  Q3 D16 C17 C16 D17 E16 F18 C3
+F3  : T  -7.75c W  -7.45c S  -0.29c ( -0.6 L  -0.5) LCB   -8.98c P  1.55% WF  69.6 PSV       5 N      70  --  F3 D16 R4 P3 Q5 M3 R17 R16
+Q5  : T  -9.24c W  -8.96c S  -0.28c ( -0.6 L  -0.5) LCB  -11.49c P  1.54% WF  50.3 PSV       3 N      51  --  Q5 D16 Q3 C3 D3 C4 D5 C6
+P4  : T  -9.43c W  -9.14c S  -0.30c ( -0.6 L  -0.5) LCB  -11.48c P  0.94% WF  34.5 PSV       2 N      35  --  P4 D16 R4 C3 D3 C4 D5 C6
+F4  : T -10.25c W  -9.82c S  -0.43c ( -0.7 L  -0.6) LCB  -12.49c P  0.70% WF  26.5 PSV       1 N      27  --  F4 D16 R4 P3 Q5 M3 R17
+R3  : T  -9.94c W  -9.59c S  -0.36c ( -0.7 L  -0.5) LCB  -12.22c P  0.49% WF  23.6 PSV       0 N      24  --  R3 D16 C6 R14 C17 D17 C16
+
+2025-06-06 21:28:07+0900: ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-06-06 21:28:07+0900: NN rows: 960
+2025-06-06 21:28:07+0900: NN batches: 481
+2025-06-06 21:28:07+0900: NN avg batch size: 1.99584
+2025-06-06 21:28:07+0900: GPU -1 finishing, processed 960 rows 481 batches
+2025-06-06 21:28:07+0900: All cleaned up, quitting

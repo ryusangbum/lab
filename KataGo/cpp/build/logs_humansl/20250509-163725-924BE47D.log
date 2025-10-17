@@ -1,0 +1,105 @@
+2025-05-09 16:37:25+0900: Running with following config:
+humanSLChosenMoveIgnorePass = true
+humanSLChosenMovePiklLambda = 100000000
+humanSLChosenMoveProp = 1.0
+humanSLProfile = rank_3d
+includeMovesOwnership = false
+includeOwnership = false
+includePV = false
+includePolicy = true
+includeScoreMean = false
+includeScoreStdev = false
+includeUtility = false
+lagBuffer = 1.0
+logAllGTPCommunication = true
+logDir = logs_humansl
+logSearchInfo = true
+logToStderr = true
+maxVisits = 40
+numSearchThreads = 1
+rules = japanese
+
+2025-05-09 16:37:25+0900: GTP Engine starting...
+2025-05-09 16:37:25+0900: KataGo v1.15.3
+2025-05-09 16:37:25+0900: Using Japanese rules initially, unless GTP/GUI overrides this
+2025-05-09 16:37:25+0900: Using 1 CPU thread(s) for search
+2025-05-09 16:37:25+0900: nnRandSeed0 = 5648655536834364015
+2025-05-09 16:37:25+0900: After dedups: nnModelFile0 = ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin useFP16 auto useNHWC auto
+2025-05-09 16:37:25+0900: Initializing neural net buffer to be size 19 * 19 exactly
+2025-05-09 16:37:28+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-05-09 16:37:28+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-05-09 16:37:28+0900: Cuda backend thread 0: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-05-09 16:37:29+0900: Loaded neural net with nnXLen 19 nnYLen 19
+2025-05-09 16:37:29+0900: nnRandSeed0 = 14269963029513768393
+2025-05-09 16:37:29+0900: After dedups: nnModelFile0 = ../../models/b18c384nbt-humanv0.bin.gz useFP16 auto useNHWC auto
+2025-05-09 16:37:29+0900: Initializing neural net buffer to be size 19 * 19 exactly
+2025-05-09 16:37:30+0900: Cuda backend thread 0: Found GPU NVIDIA RTX A5000 memory 25425608704 compute capability major 8 minor 6
+2025-05-09 16:37:30+0900: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2025-05-09 16:37:30+0900: Cuda backend thread 0: Model name: b18c384nbt-humanv0
+2025-05-09 16:37:31+0900: Loaded human SL net with nnXLen 19 nnYLen 19
+2025-05-09 16:37:31+0900: Initializing board with boardXSize 19 boardYSize 19
+2025-05-09 16:37:31+0900: --------------
+2025-05-09 16:37:31+0900: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from human5k_pure.cfg
+2025-05-09 16:37:31+0900: WARNING: Unused key 'includeMovesOwnership' in human5k_pure.cfg
+2025-05-09 16:37:31+0900: WARNING: Unused key 'includeOwnership' in human5k_pure.cfg
+2025-05-09 16:37:31+0900: WARNING: Unused key 'includePV' in human5k_pure.cfg
+2025-05-09 16:37:31+0900: WARNING: Unused key 'includePolicy' in human5k_pure.cfg
+2025-05-09 16:37:31+0900: WARNING: Unused key 'includeScoreMean' in human5k_pure.cfg
+2025-05-09 16:37:31+0900: WARNING: Unused key 'includeScoreStdev' in human5k_pure.cfg
+2025-05-09 16:37:31+0900: WARNING: Unused key 'includeUtility' in human5k_pure.cfg
+2025-05-09 16:37:31+0900: --------------
+2025-05-09 16:37:31+0900: Loaded config human5k_pure.cfg
+2025-05-09 16:37:31+0900: Loaded model ../../models/kata1-b28c512nbt-s8476434688-d4668249792.bin
+2025-05-09 16:37:31+0900: Loaded human SL model ../../models/b18c384nbt-humanv0.bin.gz
+2025-05-09 16:37:31+0900: Model name: kata1-b28c512nbt-s8476434688-d4668249792
+2025-05-09 16:37:31+0900: Human SL model name: b18c384nbt-humanv0
+2025-05-09 16:37:31+0900: GTP ready, beginning main protocol loop
+2025-05-09 16:37:36+0900: Controller: boardsize 19
+2025-05-09 16:37:36+0900: = 
+2025-05-09 16:37:39+0900: Controller: clear_board
+2025-05-09 16:37:39+0900: = 
+2025-05-09 16:37:48+0900: Controller: play B D4
+2025-05-09 16:37:48+0900: = 
+2025-05-09 16:37:51+0900: Controller: play W Q16
+2025-05-09 16:37:51+0900: = 
+2025-05-09 16:37:56+0900: Controller: kata-analyze B
+2025-05-09 16:37:56+0900: =
+2025-05-09 16:38:26+0900: Controller: genmove B
+2025-05-09 16:38:26+0900: MoveNum: 2 HASH: EB5B48764F3CF87F19236A45508C4ACB
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . @ . .
+16 . . . . . . . . . . . . . . . O2. . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . X1. . . . . . . . . . . . . . .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koSIMPLEscoreTERRITORYtaxSEKIsui0komi6.5
+Time taken: 0.0257487
+Root visits: 40
+New playouts: 40
+NN rows: 1
+NN batches: 1
+NN avg batch size: 1
+PV: R4
+Tree:
+: T  -5.86c W  -5.87c S  -0.02c ( -0.4 L  -0.3) N      40  --  R4
+---Black(^)---
+Q4  : T  -5.52c W  -5.59c S  -0.00c ( -0.3 L  -0.3) LCB   -7.12c P 26.41% WF 115.3 PSV     117 N      35  --  Q4 D16 C14 R3 R4 Q3 P4 O2
+R17 : T  -9.52c W  -8.42c S  -0.16c ( -0.5 L  -0.4) LCB -158.77c P  7.31% WF   6.0 PSV       7 N       2  --  R17 R16
+R14 : T  -7.68c W  -7.81c S  -0.20c ( -0.5 L  -0.5) LCB -157.77c P  5.28% WF   6.2 PSV       2 N       2  --  R14 Q4
+
+2025-05-09 16:38:26+0900: = R17
